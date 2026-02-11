@@ -21,7 +21,7 @@ public class LicenseApiClient
     /// ID do aplicativo QuizCraft no backend.
     /// Deve corresponder ao registro na tabela de apps do servidor.
     /// </summary>
-    private const int AppId = 9;
+    private const int AppId = 10;
 
     private static readonly JsonSerializerOptions JsonOptions = new()
     {
