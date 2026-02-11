@@ -46,6 +46,8 @@ LZMANumBlockThreads=4
 ; Aparencia
 WizardStyle=modern
 WizardSizePercent=110
+SetupIconFile=quizcraft.ico
+UninstallDisplayIcon={app}\{#MyAppExeName}
 
 ; Privilegios (instalar sem admin, com opcao de elevar)
 PrivilegesRequired=lowest
@@ -89,11 +91,11 @@ Source: "{#PublishDir}\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs
 
 [Icons]
 ; Menu Iniciar
-Name: "{group}\{#MyAppName}"; Filename: "{app}\{#MyAppExeName}"; Comment: "Abrir {#MyAppName} - Plataforma de Estudos"
+Name: "{group}\{#MyAppName}"; Filename: "{app}\{#MyAppExeName}"; IconFilename: "{app}\{#MyAppExeName}"; Comment: "Abrir {#MyAppName} - Plataforma de Estudos"
 Name: "{group}\Desinstalar {#MyAppName}"; Filename: "{uninstallexe}"; Comment: "Desinstalar {#MyAppName}"
 
 ; Area de Trabalho (opcional)
-Name: "{autodesktop}\{#MyAppName}"; Filename: "{app}\{#MyAppExeName}"; Tasks: desktopicon; Comment: "Abrir {#MyAppName}"
+Name: "{autodesktop}\{#MyAppName}"; Filename: "{app}\{#MyAppExeName}"; IconFilename: "{app}\{#MyAppExeName}"; Tasks: desktopicon; Comment: "Abrir {#MyAppName}"
 
 [Run]
 ; Executar apos instalacao
