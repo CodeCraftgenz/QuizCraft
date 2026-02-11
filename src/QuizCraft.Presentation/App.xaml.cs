@@ -91,8 +91,9 @@ public partial class App : System.Windows.Application
         var scheduler = Services.GetRequiredService<BackupSchedulerService>();
         scheduler.Start();
 
-        // Exibe a janela principal
+        // Exibe a janela principal e configura encerramento ao fechar
         var mainWindow = Services.GetRequiredService<MainWindow>();
+        mainWindow.Closed += (_, _) => Shutdown();
         mainWindow.Show();
     }
 
