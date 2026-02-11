@@ -1,0 +1,165 @@
+<UserControl x:Class="QuizCraft.Presentation.Views.ExecuteQuizView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:ui="http://schemas.lepo.co/wpfui/2022/xaml"
+             xmlns:converters="clr-namespace:QuizCraft.Presentation.Converters">
+    <UserControl.Resources>
+        <converters:BoolToVisibilityConverter x:Key="BoolToVis" />
+        <converters:BoolToCorrectColorConverter x:Key="CorrectColorConv" />
+        <converters:BoolToCorrectTextConverter x:Key="CorrectTextConv" />
+        <converters:NullOrEmptyToVisibilityConverter x:Key="NullOrEmptyToVis" />
+        <converters:EqualityConverter x:Key="EqualityConv" />
+    </UserControl.Resources>
+
+    <Grid MaxWidth="900" HorizontalAlignment="Center">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <!-- Header: progress + timer -->
+        <Border Style="{StaticResource CardBorder}" Margin="0,0,0,16">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="Auto" />
+                </Grid.ColumnDefinitions>
+
+                <StackPanel>
+                    <TextBlock FontSize="14">
+                        <Run Text="Questão " />
+                        <Run Text="{Binding CurrentDisplayIndex, Mode=OneWay}" />
+                        <Run Text=" de " />
+                        <Run Text="{Binding TotalQuestions, Mode=OneWay}" />
+                    </TextBlock>
+                    <ProgressBar Value="{Binding Progress}" Maximum="100" Height="6" Margin="0,8,0,0" />
+                </StackPanel>
+
+                <StackPanel Grid.Column="1" Orientation="Horizontal" Margin="16,0">
+                    <TextBlock Text="Acertos: " VerticalAlignment="Center" />
+                    <TextBlock Text="{Binding CorrectCount}" FontWeight="Bold" Foreground="#4CAF50"
+                               VerticalAlignment="Center" />
+                </StackPanel>
+
+                <TextBlock Grid.Column="2" VerticalAlignment="Center" Margin="16,0"
+                           FontSize="16" FontWeight="SemiBold">
+                    <Run Text="{Binding ElapsedSeconds, Mode=OneWay, StringFormat={}⏱ {0}s}" />
+                </TextBlock>
+
+                <ui:Button Grid.Column="3" Content="{Binding IsPaused}"
+                           Command="{Binding TogglePauseCommand}" Margin="8,0,0,0">
+                    <ui:Button.Style>
+                        <Style TargetType="ui:Button" BasedOn="{StaticResource {x:Type ui:Button}}">
+                            <Setter Property="Content" Value="Pausar" />
+                            <Style.Triggers>
+                                <DataTrigger Binding="{Binding IsPaused}" Value="True">
+                                    <Setter Property="Content" Value="Retomar" />
+                                </DataTrigger>
+                            </Style.Triggers>
+                        </Style>
+                    </ui:Button.Style>
+                </ui:Button>
+            </Grid>
+        </Border>
+
+        <!-- Question Content (hidden when paused) -->
+        <ScrollViewer Grid.Row="1" VerticalScrollBarVisibility="Auto"
+                      Visibility="{Binding IsPaused, Converter={StaticResource BoolToVis}, ConverterParameter=Invert}">
+            <StackPanel>
+                <!-- Statement -->
+                <Border Style="{StaticResource CardBorder}" Margin="0,0,0,16">
+                    <StackPanel>
+                        <TextBlock Text="{Binding CurrentQuestion.Statement}"
+                                   TextWrapping="Wrap" FontSize="16" LineHeight="24" />
+                    </StackPanel>
+                </Border>
+
+                <!-- Choices -->
+                <ItemsControl ItemsSource="{Binding CurrentChoices}">
+                    <ItemsControl.ItemTemplate>
+                        <DataTemplate>
+                            <Border Margin="0,0,0,8" Padding="12" CornerRadius="8" Cursor="Hand"
+                                    BorderThickness="2" BorderBrush="{ui:ThemeResource CardStrokeColorDefaultBrush}"
+                                    Background="{ui:ThemeResource CardBackgroundFillColorDefaultBrush}"
+                                    MouseLeftButtonDown="Choice_Click" Tag="{Binding}">
+                                <Grid>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="32" />
+                                        <ColumnDefinition Width="*" />
+                                    </Grid.ColumnDefinitions>
+                                    <RadioButton GroupName="Choices" VerticalAlignment="Center" IsHitTestVisible="False">
+                                        <RadioButton.IsChecked>
+                                            <MultiBinding Converter="{StaticResource EqualityConv}" Mode="OneWay">
+                                                <Binding />
+                                                <Binding Path="DataContext.SelectedChoice" RelativeSource="{RelativeSource AncestorType=UserControl}" />
+                                            </MultiBinding>
+                                        </RadioButton.IsChecked>
+                                    </RadioButton>
+                                    <TextBlock Grid.Column="1" Text="{Binding Text}"
+                                               TextWrapping="Wrap" FontSize="14" VerticalAlignment="Center" />
+                                </Grid>
+                            </Border>
+                        </DataTemplate>
+                    </ItemsControl.ItemTemplate>
+                </ItemsControl>
+
+                <!-- Feedback (Training mode) -->
+                <Border Style="{StaticResource CardBorder}" Margin="0,8,0,0"
+                        Visibility="{Binding ShowExplanation, Converter={StaticResource BoolToVis}}">
+                    <StackPanel>
+                        <TextBlock FontSize="16" FontWeight="Bold"
+                                   Text="{Binding IsCorrect, Converter={StaticResource CorrectTextConv}}"
+                                   Foreground="{Binding IsCorrect, Converter={StaticResource CorrectColorConv}}" />
+                        <TextBlock Text="{Binding CurrentQuestion.Explanation}"
+                                   TextWrapping="Wrap" Margin="0,8,0,0" Opacity="0.8"
+                                   Visibility="{Binding CurrentQuestion.Explanation, Converter={StaticResource NullOrEmptyToVis}}" />
+                    </StackPanel>
+                </Border>
+            </StackPanel>
+        </ScrollViewer>
+
+        <!-- Paused overlay -->
+        <Border Grid.Row="1" Visibility="{Binding IsPaused, Converter={StaticResource BoolToVis}}"
+                Background="{ui:ThemeResource CardBackgroundFillColorDefaultBrush}" CornerRadius="8">
+            <TextBlock Text="Quiz Pausado" FontSize="24" FontWeight="SemiBold"
+                       HorizontalAlignment="Center" VerticalAlignment="Center" Opacity="0.5" />
+        </Border>
+
+        <!-- Bottom Navigation -->
+        <Grid Grid.Row="2" Margin="0,16,0,0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <StackPanel Orientation="Horizontal">
+                <ui:Button Content="Anterior" Command="{Binding PreviousQuestionCommand}" Margin="0,0,8,0" />
+                <ui:Button Command="{Binding ToggleMarkForReviewCommand}" Margin="0,0,8,0">
+                    <ui:Button.Style>
+                        <Style TargetType="ui:Button" BasedOn="{StaticResource {x:Type ui:Button}}">
+                            <Setter Property="Content" Value="Marcar p/ Revisão" />
+                            <Style.Triggers>
+                                <DataTrigger Binding="{Binding MarkedForReview}" Value="True">
+                                    <Setter Property="Content" Value="Desmarcado" />
+                                </DataTrigger>
+                            </Style.Triggers>
+                        </Style>
+                    </ui:Button.Style>
+                </ui:Button>
+            </StackPanel>
+
+            <ui:Button Grid.Column="1" Content="Confirmar Resposta" Appearance="Primary"
+                       Command="{Binding SubmitAnswerCommand}" FontSize="14" Padding="24,8" />
+
+            <StackPanel Grid.Column="2" Orientation="Horizontal" HorizontalAlignment="Right">
+                <ui:Button Content="Próxima" Command="{Binding NextQuestionCommand}" Margin="0,0,8,0" />
+                <ui:Button Content="Finalizar Quiz" Appearance="Caution"
+                           Command="{Binding FinishQuizCommand}" />
+            </StackPanel>
+        </Grid>
+    </Grid>
+</UserControl>

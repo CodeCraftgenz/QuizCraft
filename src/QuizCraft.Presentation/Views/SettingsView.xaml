@@ -1,0 +1,124 @@
+<UserControl x:Class="QuizCraft.Presentation.Views.SettingsView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:ui="http://schemas.lepo.co/wpfui/2022/xaml"
+             xmlns:converters="clr-namespace:QuizCraft.Presentation.Converters">
+    <UserControl.Resources>
+        <converters:BoolToVisibilityConverter x:Key="BoolToVis" />
+        <converters:NullToVisibilityConverter x:Key="NullToVis" />
+    </UserControl.Resources>
+
+    <ScrollViewer VerticalScrollBarVisibility="Auto">
+        <StackPanel MaxWidth="700" HorizontalAlignment="Center">
+            <TextBlock Text="Configurações" Style="{StaticResource PageTitle}" />
+
+            <!-- Appearance -->
+            <Border Style="{StaticResource CardBorder}" Margin="0,0,0,16">
+                <StackPanel>
+                    <TextBlock Text="Aparência" Style="{StaticResource SectionTitle}" />
+                    <CheckBox Content="Tema Escuro" IsChecked="{Binding IsDarkTheme}" Margin="0,0,0,8" />
+                    <StackPanel Orientation="Horizontal" Margin="0,0,0,8">
+                        <TextBlock Text="Tamanho da Fonte: " VerticalAlignment="Center" />
+                        <Slider Minimum="10" Maximum="24" Value="{Binding FontSize}"
+                                Width="200" IsSnapToTickEnabled="True" TickFrequency="1" TickPlacement="BottomRight" />
+                        <TextBlock Text="{Binding FontSize}" VerticalAlignment="Center" Margin="8,0,0,0" FontWeight="SemiBold" />
+                    </StackPanel>
+                </StackPanel>
+            </Border>
+
+            <!-- Backup Settings -->
+            <Border Style="{StaticResource CardBorder}" Margin="0,0,0,16">
+                <StackPanel>
+                    <TextBlock Text="Backup Automático" Style="{StaticResource SectionTitle}" />
+
+                    <Grid Margin="0,0,0,12">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+                        <StackPanel Margin="0,0,8,0">
+                            <TextBlock Text="Intervalo (dias)" Margin="0,0,0,4" />
+                            <ui:NumberBox Value="{Binding BackupIntervalDays}" Minimum="1" Maximum="90"
+                                          SpinButtonPlacementMode="Inline" />
+                        </StackPanel>
+                        <StackPanel Grid.Column="1" Margin="8,0,0,0">
+                            <TextBlock Text="Manter últimos N backups" Margin="0,0,0,4" />
+                            <ui:NumberBox Value="{Binding BackupRetentionCount}" Minimum="1" Maximum="50"
+                                          SpinButtonPlacementMode="Inline" />
+                        </StackPanel>
+                    </Grid>
+
+                    <TextBlock Opacity="0.6" FontSize="11" Margin="0,0,0,8">
+                        <Run Text="Diretório: " />
+                        <Run Text="{Binding BackupDirectory, Mode=OneWay}" />
+                    </TextBlock>
+                    <TextBlock Opacity="0.6" FontSize="11" Margin="0,0,0,12"
+                               Visibility="{Binding LastBackupDate, Converter={StaticResource NullToVis}}">
+                        <Run Text="Último backup: " />
+                        <Run Text="{Binding LastBackupDate, Mode=OneWay}" />
+                    </TextBlock>
+
+                    <StackPanel Orientation="Horizontal">
+                        <ui:Button Content="Criar Backup Agora" Appearance="Primary"
+                                   Command="{Binding CreateBackupCommand}" Margin="0,0,8,0" />
+                        <ui:Button Content="Salvar Configurações"
+                                   Command="{Binding SaveSettingsCommand}" />
+                    </StackPanel>
+                </StackPanel>
+            </Border>
+
+            <!-- Backup List -->
+            <Border Style="{StaticResource CardBorder}" Margin="0,0,0,16">
+                <StackPanel>
+                    <TextBlock Text="Backups Disponíveis" Style="{StaticResource SectionTitle}" />
+                    <ItemsControl ItemsSource="{Binding Backups}">
+                        <ItemsControl.ItemTemplate>
+                            <DataTemplate>
+                                <Grid Margin="0,4">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*" />
+                                        <ColumnDefinition Width="80" />
+                                        <ColumnDefinition Width="120" />
+                                        <ColumnDefinition Width="Auto" />
+                                    </Grid.ColumnDefinitions>
+                                    <TextBlock Text="{Binding FileName}" VerticalAlignment="Center"
+                                               TextTrimming="CharacterEllipsis" />
+                                    <TextBlock Grid.Column="1" Text="{Binding Size}" VerticalAlignment="Center"
+                                               Opacity="0.6" />
+                                    <TextBlock Grid.Column="2" Text="{Binding CreatedAt, StringFormat=dd/MM/yyyy HH:mm}"
+                                               VerticalAlignment="Center" Opacity="0.6" />
+                                    <ui:Button Grid.Column="3" Content="Restaurar"
+                                               Command="{Binding DataContext.RestoreBackupCommand, RelativeSource={RelativeSource AncestorType=UserControl}}"
+                                               CommandParameter="{Binding}" />
+                                </Grid>
+                            </DataTemplate>
+                        </ItemsControl.ItemTemplate>
+                    </ItemsControl>
+                </StackPanel>
+            </Border>
+
+            <!-- Import/Export -->
+            <Border Style="{StaticResource CardBorder}" Margin="0,0,0,16">
+                <StackPanel>
+                    <TextBlock Text="Importar / Exportar" Style="{StaticResource SectionTitle}" />
+                    <StackPanel Orientation="Horizontal">
+                        <ui:Button Content="Exportar Questões (JSON)" Appearance="Primary"
+                                   Command="{Binding ExportQuestionsJsonCommand}" Margin="0,0,8,0" />
+                        <ui:Button Content="Exportar Estatísticas (CSV)"
+                                   Command="{Binding ExportStatsCsvCommand}" />
+                    </StackPanel>
+                </StackPanel>
+            </Border>
+
+            <!-- Status -->
+            <TextBlock Text="{Binding StatusMessage}" Foreground="#4CAF50"
+                       Visibility="{Binding StatusMessage, Converter={StaticResource NullToVis}}"
+                       FontWeight="SemiBold" HorizontalAlignment="Center" Margin="0,0,0,16" />
+
+            <!-- Error -->
+            <TextBlock Text="{Binding ErrorMessage}" Foreground="#F44336"
+                       Visibility="{Binding ErrorMessage, Converter={StaticResource NullToVis}}"
+                       HorizontalAlignment="Center" />
+        </StackPanel>
+    </ScrollViewer>
+</UserControl>

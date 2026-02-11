@@ -1,0 +1,213 @@
+<UserControl x:Class="QuizCraft.Presentation.Views.QuestionsView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:ui="http://schemas.lepo.co/wpfui/2022/xaml"
+             xmlns:converters="clr-namespace:QuizCraft.Presentation.Converters"
+             xmlns:enums="clr-namespace:QuizCraft.Domain.Enums;assembly=QuizCraft.Domain">
+    <UserControl.Resources>
+        <converters:BoolToVisibilityConverter x:Key="BoolToVis" />
+        <converters:QuestionTypeToTextConverter x:Key="QTypeConv" />
+    </UserControl.Resources>
+
+    <Grid>
+        <!-- Questions List (behind editor) -->
+        <Grid Visibility="{Binding IsEditorOpen, Converter={StaticResource BoolToVis}, ConverterParameter=Invert}">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+
+            <!-- Title + New -->
+            <Grid>
+                <TextBlock Text="Questões" Style="{StaticResource PageTitle}" />
+                <ui:Button Content="Nova Questão" Appearance="Primary"
+                           Command="{Binding NewQuestionCommand}"
+                           HorizontalAlignment="Right" VerticalAlignment="Center" />
+            </Grid>
+
+            <!-- Filters -->
+            <Border Grid.Row="1" Style="{StaticResource CardBorder}" Margin="0,0,0,12">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="160" />
+                        <ColumnDefinition Width="160" />
+                        <ColumnDefinition Width="Auto" />
+                    </Grid.ColumnDefinitions>
+                    <ui:TextBox PlaceholderText="Buscar por texto..."
+                                Text="{Binding SearchText, UpdateSourceTrigger=PropertyChanged}" />
+                    <ComboBox Grid.Column="1" ItemsSource="{Binding Subjects}"
+                              SelectedItem="{Binding FilterSubject}"
+                              DisplayMemberPath="Name" Margin="8,0"
+                              ToolTip="Matéria" />
+                    <ComboBox Grid.Column="2" ItemsSource="{Binding AllTopics}"
+                              SelectedItem="{Binding FilterTopic}"
+                              DisplayMemberPath="Name"
+                              ToolTip="Tópico" />
+                    <ui:Button Grid.Column="3" Content="Buscar" Appearance="Primary"
+                               Command="{Binding SearchQuestionsCommand}" Margin="8,0,0,0" />
+                </Grid>
+            </Border>
+
+            <!-- Questions DataGrid -->
+            <DataGrid Grid.Row="2" ItemsSource="{Binding Questions}" AutoGenerateColumns="False"
+                      IsReadOnly="True" SelectionMode="Single" CanUserResizeRows="False"
+                      HeadersVisibility="Column" GridLinesVisibility="Horizontal"
+                      BorderThickness="0" Background="Transparent">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="ID" Binding="{Binding Id}" Width="50" />
+                    <DataGridTextColumn Header="Enunciado" Binding="{Binding Statement}" Width="*">
+                        <DataGridTextColumn.ElementStyle>
+                            <Style TargetType="TextBlock">
+                                <Setter Property="TextTrimming" Value="CharacterEllipsis" />
+                            </Style>
+                        </DataGridTextColumn.ElementStyle>
+                    </DataGridTextColumn>
+                    <DataGridTextColumn Header="Tópico" Binding="{Binding Topic.Name}" Width="120" />
+                    <DataGridTemplateColumn Header="Tipo" Width="120">
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <TextBlock Text="{Binding Type, Converter={StaticResource QTypeConv}}" />
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn>
+                    <DataGridTextColumn Header="Dif." Binding="{Binding Difficulty}" Width="50" />
+                    <DataGridTemplateColumn Header="Ações" Width="120">
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <StackPanel Orientation="Horizontal">
+                                    <ui:Button Icon="{ui:SymbolIcon Edit24}" ToolTip="Editar"
+                                               Command="{Binding DataContext.EditQuestionCommand, RelativeSource={RelativeSource AncestorType=UserControl}}"
+                                               CommandParameter="{Binding}" Margin="0,0,4,0" />
+                                    <ui:Button Icon="{ui:SymbolIcon Delete24}" ToolTip="Excluir"
+                                               Command="{Binding DataContext.DeleteQuestionCommand, RelativeSource={RelativeSource AncestorType=UserControl}}"
+                                               CommandParameter="{Binding}" />
+                                </StackPanel>
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn>
+                </DataGrid.Columns>
+            </DataGrid>
+
+            <!-- Pagination -->
+            <StackPanel Grid.Row="3" Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,8">
+                <ui:Button Content="Anterior" Command="{Binding PreviousPageCommand}" Margin="0,0,8,0" />
+                <TextBlock VerticalAlignment="Center">
+                    <Run Text="Página " />
+                    <Run Text="{Binding CurrentPage, Mode=OneWay}" />
+                    <Run Text=" de " />
+                    <Run Text="{Binding TotalPages, Mode=OneWay}" />
+                    <Run Text=" (" />
+                    <Run Text="{Binding TotalCount, Mode=OneWay}" />
+                    <Run Text=" questões)" />
+                </TextBlock>
+                <ui:Button Content="Próxima" Command="{Binding NextPageCommand}" Margin="8,0,0,0" />
+            </StackPanel>
+        </Grid>
+
+        <!-- Question Editor -->
+        <ScrollViewer Visibility="{Binding IsEditorOpen, Converter={StaticResource BoolToVis}}"
+                      VerticalScrollBarVisibility="Auto">
+            <StackPanel MaxWidth="800">
+                <Grid>
+                    <TextBlock Style="{StaticResource PageTitle}">
+                        <Run Text="{Binding IsNewQuestion, Mode=OneWay, StringFormat={}}" />
+                        <Run Text="Nova Questão" />
+                    </TextBlock>
+                    <ui:Button Content="Fechar" HorizontalAlignment="Right"
+                               Command="{Binding CloseEditorCommand}" />
+                </Grid>
+
+                <Border Style="{StaticResource CardBorder}" Margin="0,0,0,12">
+                    <StackPanel>
+                        <TextBlock Text="Tópico *" FontWeight="SemiBold" Margin="0,0,0,4" />
+                        <ComboBox ItemsSource="{Binding AllTopics}" SelectedItem="{Binding EditorTopic}"
+                                  DisplayMemberPath="Name" Margin="0,0,0,12" />
+
+                        <TextBlock Text="Tipo de Questão" FontWeight="SemiBold" Margin="0,0,0,4" />
+                        <ComboBox SelectedItem="{Binding EditorType}" Margin="0,0,0,12">
+                            <ComboBox.ItemTemplate>
+                                <DataTemplate>
+                                    <TextBlock Text="{Binding Converter={StaticResource QTypeConv}}" />
+                                </DataTemplate>
+                            </ComboBox.ItemTemplate>
+                            <ComboBox.Items>
+                                <enums:QuestionType>MultipleChoice</enums:QuestionType>
+                                <enums:QuestionType>TrueFalse</enums:QuestionType>
+                                <enums:QuestionType>ShortAnswer</enums:QuestionType>
+                            </ComboBox.Items>
+                        </ComboBox>
+
+                        <TextBlock Text="Enunciado *" FontWeight="SemiBold" Margin="0,0,0,4" />
+                        <ui:TextBox Text="{Binding EditorStatement, UpdateSourceTrigger=PropertyChanged}"
+                                    AcceptsReturn="True" MinHeight="80" TextWrapping="Wrap" Margin="0,0,0,12" />
+
+                        <TextBlock Text="Explicação / Comentário" FontWeight="SemiBold" Margin="0,0,0,4" />
+                        <ui:TextBox Text="{Binding EditorExplanation, UpdateSourceTrigger=PropertyChanged}"
+                                    AcceptsReturn="True" MinHeight="60" TextWrapping="Wrap" Margin="0,0,0,12" />
+
+                        <Grid Margin="0,0,0,12">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+                            <StackPanel Margin="0,0,8,0">
+                                <TextBlock Text="Dificuldade (1-5)" FontWeight="SemiBold" Margin="0,0,0,4" />
+                                <Slider Minimum="1" Maximum="5" Value="{Binding EditorDifficulty}"
+                                        IsSnapToTickEnabled="True" TickFrequency="1" TickPlacement="BottomRight" />
+                                <TextBlock Text="{Binding EditorDifficulty}" HorizontalAlignment="Center" />
+                            </StackPanel>
+                            <StackPanel Grid.Column="1" Margin="4,0">
+                                <TextBlock Text="Fonte / Referência" FontWeight="SemiBold" Margin="0,0,0,4" />
+                                <ui:TextBox Text="{Binding EditorSource, UpdateSourceTrigger=PropertyChanged}"
+                                            PlaceholderText="Ex: ENEM 2023" />
+                            </StackPanel>
+                            <StackPanel Grid.Column="2" Margin="8,0,0,0">
+                                <TextBlock Text="Tags (separadas por vírgula)" FontWeight="SemiBold" Margin="0,0,0,4" />
+                                <ui:TextBox Text="{Binding EditorTagsText, UpdateSourceTrigger=PropertyChanged}"
+                                            PlaceholderText="Ex: funções, cálculo" />
+                            </StackPanel>
+                        </Grid>
+                    </StackPanel>
+                </Border>
+
+                <!-- Choices -->
+                <Border Style="{StaticResource CardBorder}" Margin="0,0,0,12">
+                    <StackPanel>
+                        <Grid Margin="0,0,0,8">
+                            <TextBlock Text="Alternativas" FontWeight="SemiBold" />
+                            <ui:Button Content="+ Alternativa" HorizontalAlignment="Right"
+                                       Command="{Binding AddChoiceCommand}" />
+                        </Grid>
+                        <ItemsControl ItemsSource="{Binding EditorChoices}">
+                            <ItemsControl.ItemTemplate>
+                                <DataTemplate>
+                                    <Grid Margin="0,0,0,8">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="Auto" />
+                                            <ColumnDefinition Width="*" />
+                                            <ColumnDefinition Width="Auto" />
+                                        </Grid.ColumnDefinitions>
+                                        <CheckBox IsChecked="{Binding IsCorrect}" ToolTip="Marcar como correta"
+                                                  Margin="0,0,8,0" VerticalAlignment="Center" />
+                                        <ui:TextBox Grid.Column="1" Text="{Binding Text, UpdateSourceTrigger=PropertyChanged}"
+                                                    PlaceholderText="Texto da alternativa..." />
+                                        <ui:Button Grid.Column="2" Icon="{ui:SymbolIcon Delete24}"
+                                                   Command="{Binding DataContext.RemoveChoiceCommand, RelativeSource={RelativeSource AncestorType=UserControl}}"
+                                                   CommandParameter="{Binding}" Margin="4,0,0,0" />
+                                    </Grid>
+                                </DataTemplate>
+                            </ItemsControl.ItemTemplate>
+                        </ItemsControl>
+                    </StackPanel>
+                </Border>
+
+                <ui:Button Content="Salvar Questão" Appearance="Primary"
+                           Command="{Binding SaveQuestionCommand}" HorizontalAlignment="Right" />
+            </StackPanel>
+        </ScrollViewer>
+    </Grid>
+</UserControl>

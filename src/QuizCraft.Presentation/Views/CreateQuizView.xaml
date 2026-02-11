@@ -1,0 +1,107 @@
+<UserControl x:Class="QuizCraft.Presentation.Views.CreateQuizView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:ui="http://schemas.lepo.co/wpfui/2022/xaml"
+             xmlns:converters="clr-namespace:QuizCraft.Presentation.Converters"
+             xmlns:enums="clr-namespace:QuizCraft.Domain.Enums;assembly=QuizCraft.Domain">
+    <UserControl.Resources>
+        <converters:BoolToVisibilityConverter x:Key="BoolToVis" />
+        <converters:NullOrEmptyToVisibilityConverter x:Key="NullOrEmptyToVis" />
+        <converters:QuizModeToTextConverter x:Key="QuizModeConv" />
+    </UserControl.Resources>
+
+    <ScrollViewer VerticalScrollBarVisibility="Auto">
+        <StackPanel MaxWidth="700" HorizontalAlignment="Center">
+            <TextBlock Text="Criar Quiz" Style="{StaticResource PageTitle}" />
+
+            <!-- Filters -->
+            <Border Style="{StaticResource CardBorder}" Margin="0,0,0,16">
+                <StackPanel>
+                    <TextBlock Text="Filtros" Style="{StaticResource SectionTitle}" />
+
+                    <TextBlock Text="Matéria" FontWeight="SemiBold" Margin="0,0,0,4" />
+                    <ComboBox ItemsSource="{Binding Subjects}" SelectedItem="{Binding SelectedSubject}"
+                              DisplayMemberPath="Name" Margin="0,0,0,12" />
+
+                    <TextBlock Text="Tópico (opcional)" FontWeight="SemiBold" Margin="0,0,0,4" />
+                    <ComboBox ItemsSource="{Binding Topics}" SelectedItem="{Binding SelectedTopic}"
+                              DisplayMemberPath="Name" Margin="0,0,0,12" />
+
+                    <Grid Margin="0,0,0,12">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+                        <StackPanel Margin="0,0,8,0">
+                            <TextBlock Text="Dificuldade Mínima" FontWeight="SemiBold" Margin="0,0,0,4" />
+                            <Slider Minimum="1" Maximum="5" Value="{Binding MinDifficulty}"
+                                    IsSnapToTickEnabled="True" TickFrequency="1" TickPlacement="BottomRight" />
+                        </StackPanel>
+                        <StackPanel Grid.Column="1" Margin="8,0,0,0">
+                            <TextBlock Text="Dificuldade Máxima" FontWeight="SemiBold" Margin="0,0,0,4" />
+                            <Slider Minimum="1" Maximum="5" Value="{Binding MaxDifficulty}"
+                                    IsSnapToTickEnabled="True" TickFrequency="1" TickPlacement="BottomRight" />
+                        </StackPanel>
+                    </Grid>
+
+                    <TextBlock Margin="0,0,0,8" Opacity="0.6">
+                        <Run Text="Questões disponíveis: " />
+                        <Run Text="{Binding AvailableQuestionCount, Mode=OneWay}" FontWeight="Bold" />
+                    </TextBlock>
+                </StackPanel>
+            </Border>
+
+            <!-- Mode and Options -->
+            <Border Style="{StaticResource CardBorder}" Margin="0,0,0,16">
+                <StackPanel>
+                    <TextBlock Text="Modo do Quiz" Style="{StaticResource SectionTitle}" />
+                    <ComboBox SelectedItem="{Binding SelectedMode}" Margin="0,0,0,16">
+                        <ComboBox.ItemTemplate>
+                            <DataTemplate>
+                                <TextBlock Text="{Binding Converter={StaticResource QuizModeConv}}" />
+                            </DataTemplate>
+                        </ComboBox.ItemTemplate>
+                        <ComboBox.Items>
+                            <enums:QuizMode>Training</enums:QuizMode>
+                            <enums:QuizMode>Exam</enums:QuizMode>
+                            <enums:QuizMode>ErrorReview</enums:QuizMode>
+                            <enums:QuizMode>SpacedReview</enums:QuizMode>
+                        </ComboBox.Items>
+                    </ComboBox>
+
+                    <Grid Margin="0,0,0,12">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+                        <StackPanel Margin="0,0,8,0">
+                            <TextBlock Text="Quantidade de Questões" FontWeight="SemiBold" Margin="0,0,0,4" />
+                            <ui:NumberBox Value="{Binding QuestionCount}" Minimum="1" Maximum="200"
+                                          SpinButtonPlacementMode="Inline" />
+                        </StackPanel>
+                    </Grid>
+
+                    <CheckBox Content="Ordem aleatória" IsChecked="{Binding Randomize}" Margin="0,0,0,8" />
+                    <CheckBox Content="Misturar alternativas" IsChecked="{Binding ShuffleChoices}" Margin="0,0,0,8" />
+
+                    <CheckBox Content="Ativar temporizador" IsChecked="{Binding UseTimer}" Margin="0,0,0,8" />
+                    <StackPanel Visibility="{Binding UseTimer, Converter={StaticResource BoolToVis}}" Margin="24,0,0,0">
+                        <TextBlock Text="Tempo por questão (segundos)" Margin="0,0,0,4" />
+                        <ui:NumberBox Value="{Binding TimerSeconds}" Minimum="10" Maximum="600"
+                                      SpinButtonPlacementMode="Inline" />
+                    </StackPanel>
+                </StackPanel>
+            </Border>
+
+            <!-- Start Button -->
+            <ui:Button Content="Iniciar Quiz" Appearance="Primary" FontSize="16"
+                       Command="{Binding StartQuizCommand}"
+                       HorizontalAlignment="Center" Padding="40,12" Margin="0,0,0,24" />
+
+            <!-- Error -->
+            <TextBlock Text="{Binding ErrorMessage}" Foreground="Red"
+                       Visibility="{Binding ErrorMessage, Converter={StaticResource NullOrEmptyToVis}}"
+                       HorizontalAlignment="Center" />
+        </StackPanel>
+    </ScrollViewer>
+</UserControl>

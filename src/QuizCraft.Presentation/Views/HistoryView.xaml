@@ -1,0 +1,45 @@
+<UserControl x:Class="QuizCraft.Presentation.Views.HistoryView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:ui="http://schemas.lepo.co/wpfui/2022/xaml"
+             xmlns:converters="clr-namespace:QuizCraft.Presentation.Converters">
+    <UserControl.Resources>
+        <converters:DoubleToPercentageConverter x:Key="PctConverter" />
+        <converters:PercentageToColorConverter x:Key="PctColorConverter" />
+    </UserControl.Resources>
+
+    <StackPanel>
+        <TextBlock Text="Histórico de Sessões" Style="{StaticResource PageTitle}" />
+
+        <DataGrid ItemsSource="{Binding Sessions}" AutoGenerateColumns="False"
+                  IsReadOnly="True" SelectionMode="Single" CanUserResizeRows="False"
+                  HeadersVisibility="Column" GridLinesVisibility="Horizontal"
+                  BorderThickness="0" Background="Transparent">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Data" Binding="{Binding Date, StringFormat=dd/MM/yyyy HH:mm}" Width="140" />
+                <DataGridTextColumn Header="Modo" Binding="{Binding Mode}" Width="110" />
+                <DataGridTextColumn Header="Questões" Binding="{Binding TotalQuestions}" Width="80" />
+                <DataGridTextColumn Header="Acertos" Binding="{Binding CorrectCount}" Width="80" />
+                <DataGridTemplateColumn Header="Taxa" Width="100">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <TextBlock Text="{Binding AccuracyRate, Converter={StaticResource PctConverter}}"
+                                       Foreground="{Binding AccuracyRate, Converter={StaticResource PctColorConverter}}"
+                                       FontWeight="SemiBold" />
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+                <DataGridTextColumn Header="Duração" Binding="{Binding Duration}" Width="80" />
+                <DataGridTemplateColumn Header="" Width="100">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <ui:Button Content="Ver" Appearance="Primary"
+                                       Command="{Binding DataContext.ViewSessionCommand, RelativeSource={RelativeSource AncestorType=UserControl}}"
+                                       CommandParameter="{Binding}" />
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+    </StackPanel>
+</UserControl>
