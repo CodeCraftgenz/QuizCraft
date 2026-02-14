@@ -87,12 +87,37 @@ Console.WriteLine("[OK] Banco conectado.");
 Console.WriteLine();
 
 // =========================================================================
-// 3. Carregar catalogo de materias
+// 3. Carregar catalogo de materias e progresso anterior
 // =========================================================================
 
 var materias = SubjectCatalog.ObterMaterias();
 var totalLotes = materias.Sum(m => m.Lotes.Length);
 Console.WriteLine($"[INFO] Catalogo: {materias.Length} materias, {totalLotes} lotes, {totalLotes * 50} questoes planejadas");
+
+// Controle de progresso - salva em %AppData%\QuizCraft\generator-progress.json
+// Para resetar e gerar tudo do zero, passe --reset como argumento
+var progressPath = Path.Combine(
+    Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData),
+    "QuizCraft", "generator-progress.json");
+var progress = new ProgressTracker(progressPath);
+
+// Verificar se o usuario quer resetar o progresso
+if (args.Contains("--reset"))
+{
+    progress.Resetar();
+    Console.ForegroundColor = ConsoleColor.Yellow;
+    Console.WriteLine("[INFO] Progresso resetado. Gerando tudo do zero.");
+    Console.ResetColor();
+}
+
+if (progress.LotesConcluidos > 0)
+{
+    Console.ForegroundColor = ConsoleColor.Green;
+    Console.WriteLine($"[INFO] Progresso anterior: {progress.LotesConcluidos}/{totalLotes} lotes ja concluidos (serao pulados)");
+    Console.WriteLine($"[INFO] Para resetar e gerar tudo do zero: dotnet run -- --reset");
+    Console.ResetColor();
+}
+
 Console.WriteLine();
 
 // =========================================================================
@@ -126,6 +151,15 @@ foreach (var materia in materias)
         Console.ForegroundColor = ConsoleColor.Yellow;
         Console.WriteLine($"  {progresso} Lote {lote.Numero} - {topicos}");
         Console.ResetColor();
+
+        // Verificar se o lote ja foi concluido anteriormente
+        if (progress.LoteJaConcluido(materia.Nome, lote.Numero))
+        {
+            Console.ForegroundColor = ConsoleColor.DarkGray;
+            Console.WriteLine($"    -> Ja concluido anteriormente. Pulando...");
+            Console.ResetColor();
+            continue;
+        }
 
         // Tentativas com retry
         bool sucesso = false;
@@ -183,6 +217,9 @@ foreach (var materia in materias)
 
                     questoesImportadas += qtd;
                 }
+
+                // Salvar progresso - marca lote como concluido no disco
+                progress.MarcarLoteConcluido(materia.Nome, lote.Numero, validacao.TotalQuestoes);
 
                 sucesso = true;
                 break; // Sai do loop de tentativas
