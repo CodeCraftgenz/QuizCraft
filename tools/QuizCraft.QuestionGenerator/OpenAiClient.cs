@@ -90,7 +90,7 @@ public class OpenAiClient : IDisposable
         return $"""
             Você é um gerador de questões educacionais para estudantes brasileiros.
 
-            TAREFA: Gerar EXATAMENTE 30 questões originais de múltipla escolha.
+            TAREFA: Gerar EXATAMENTE 25 questões originais de múltipla escolha.
 
             MATÉRIA: {materia}
             NÍVEL: {lote.Nivel} (EF = Ensino Fundamental, EM = Ensino Médio)
@@ -108,14 +108,14 @@ public class OpenAiClient : IDisposable
             8. NÃO copie questões reais de provas. Crie questões ORIGINAIS.
             9. Inclua uma explicação curta e didática no campo "Explanation".
 
-            DISTRIBUIÇÃO DE DIFICULDADE (total 30):
-            - 6 questões com Difficulty=1 (muito fácil)
-            - 6 questões com Difficulty=2 (fácil)
-            - 12 questões com Difficulty=3 (média)
+            DISTRIBUIÇÃO DE DIFICULDADE (total 25):
+            - 5 questões com Difficulty=1 (muito fácil)
+            - 5 questões com Difficulty=2 (fácil)
+            - 10 questões com Difficulty=3 (média)
             - 3 questões com Difficulty=4 (difícil)
-            - 3 questões com Difficulty=5 (muito difícil)
+            - 2 questões com Difficulty=5 (muito difícil)
 
-            FORMATO: Retorne um array JSON com exatamente 30 objetos.
+            FORMATO: Retorne um array JSON com exatamente 25 objetos.
             """;
     }
 
@@ -133,7 +133,7 @@ public class OpenAiClient : IDisposable
             input = new object[]
             {
                 new { role = "system", content = systemPrompt },
-                new { role = "user", content = "Gere as 30 questões agora." }
+                new { role = "user", content = "Gere as 25 questões agora." }
             },
             text = new
             {
