@@ -23,7 +23,7 @@ public record ValidacaoResultado(
 public static class QuestionValidator
 {
     /// <summary>Numero esperado de questoes por lote.</summary>
-    private const int QuestoesEsperadas = 50;
+    private const int QuestoesEsperadas = 30;
 
     /// <summary>Numero esperado de alternativas por questao.</summary>
     private const int AlternativasEsperadas = 4;

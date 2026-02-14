@@ -5,7 +5,7 @@
 //   1. Definir a chave: setx OPENAI_API_KEY "sk-..."  (PowerShell)
 //   2. Rodar:           dotnet run --project tools/QuizCraft.QuestionGenerator
 //
-// Gera 2.000 questoes (10 materias x 4 lotes x 50 questoes) e importa
+// Gera 1.200 questoes (10 materias x 4 lotes x 30 questoes) e importa
 // diretamente no banco SQLite do QuizCraft via ImportExportService.
 // =============================================================================
 
@@ -34,7 +34,7 @@ const int DelayMaxMs = 1500;
 Console.OutputEncoding = System.Text.Encoding.UTF8;
 Console.WriteLine("══════════════════════════════════════════════════════════");
 Console.WriteLine("  QuizCraft - Gerador de Questoes via OpenAI            ");
-Console.WriteLine("  10 materias x 4 lotes x 50 questoes = 2.000 total    ");
+Console.WriteLine("  10 materias x 4 lotes x 30 questoes = 1.200 total    ");
 Console.WriteLine("══════════════════════════════════════════════════════════");
 Console.WriteLine();
 
@@ -92,7 +92,7 @@ Console.WriteLine();
 
 var materias = SubjectCatalog.ObterMaterias();
 var totalLotes = materias.Sum(m => m.Lotes.Length);
-Console.WriteLine($"[INFO] Catalogo: {materias.Length} materias, {totalLotes} lotes, {totalLotes * 50} questoes planejadas");
+Console.WriteLine($"[INFO] Catalogo: {materias.Length} materias, {totalLotes} lotes, {totalLotes * 30} questoes planejadas");
 
 // Controle de progresso - salva em %AppData%\QuizCraft\generator-progress.json
 // Para resetar e gerar tudo do zero, passe --reset como argumento
