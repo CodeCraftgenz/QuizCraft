@@ -15,6 +15,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuizCraft.Presentation", "s
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuizCraft.Tests", "tests\QuizCraft.Tests\QuizCraft.Tests.csproj", "{A5F96586-6B14-4572-9372-DEA1F8DF2A10}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tools", "tools", "{07C2787E-EAC7-C090-1BA3-A61EC2A24D84}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuizCraft.QuestionGenerator", "tools\QuizCraft.QuestionGenerator\QuizCraft.QuestionGenerator.csproj", "{A6EEAA5D-3A10-4230-84EC-0CCEE4A68D78}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -85,6 +89,18 @@ Global
 		{A5F96586-6B14-4572-9372-DEA1F8DF2A10}.Release|x64.Build.0 = Release|Any CPU
 		{A5F96586-6B14-4572-9372-DEA1F8DF2A10}.Release|x86.ActiveCfg = Release|Any CPU
 		{A5F96586-6B14-4572-9372-DEA1F8DF2A10}.Release|x86.Build.0 = Release|Any CPU
+		{A6EEAA5D-3A10-4230-84EC-0CCEE4A68D78}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A6EEAA5D-3A10-4230-84EC-0CCEE4A68D78}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A6EEAA5D-3A10-4230-84EC-0CCEE4A68D78}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{A6EEAA5D-3A10-4230-84EC-0CCEE4A68D78}.Debug|x64.Build.0 = Debug|Any CPU
+		{A6EEAA5D-3A10-4230-84EC-0CCEE4A68D78}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{A6EEAA5D-3A10-4230-84EC-0CCEE4A68D78}.Debug|x86.Build.0 = Debug|Any CPU
+		{A6EEAA5D-3A10-4230-84EC-0CCEE4A68D78}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A6EEAA5D-3A10-4230-84EC-0CCEE4A68D78}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A6EEAA5D-3A10-4230-84EC-0CCEE4A68D78}.Release|x64.ActiveCfg = Release|Any CPU
+		{A6EEAA5D-3A10-4230-84EC-0CCEE4A68D78}.Release|x64.Build.0 = Release|Any CPU
+		{A6EEAA5D-3A10-4230-84EC-0CCEE4A68D78}.Release|x86.ActiveCfg = Release|Any CPU
+		{A6EEAA5D-3A10-4230-84EC-0CCEE4A68D78}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -95,5 +111,6 @@ Global
 		{53023A01-163D-4E51-A6D4-B4EA462FC7B2} = {827E0CD3-B72D-47B6-A68D-7590B98EB39B}
 		{4D8FC713-3E12-4F4E-A70B-9022D4614822} = {827E0CD3-B72D-47B6-A68D-7590B98EB39B}
 		{A5F96586-6B14-4572-9372-DEA1F8DF2A10} = {827E0CD3-B72D-47B6-A68D-7590B98EB39B}
+		{A6EEAA5D-3A10-4230-84EC-0CCEE4A68D78} = {07C2787E-EAC7-C090-1BA3-A61EC2A24D84}
 	EndGlobalSection
 EndGlobal

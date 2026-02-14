@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net9.0-windows</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <!-- Referencia ao projeto Application para usar ImportExportService -->
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\QuizCraft.Application\QuizCraft.Application.csproj" />
+    <ProjectReference Include="..\..\src\QuizCraft.Infrastructure\QuizCraft.Infrastructure.csproj" />
+  </ItemGroup>
+
+</Project>
