@@ -191,10 +191,18 @@ public class LicenseApiClient
         try
         {
             using var doc = JsonDocument.Parse(json);
+            // Formato: { "error": { "message": "..." } }
+            if (doc.RootElement.TryGetProperty("error", out var err))
+            {
+                if (err.ValueKind == JsonValueKind.Object &&
+                    err.TryGetProperty("message", out var errMsg))
+                    return errMsg.GetString();
+                if (err.ValueKind == JsonValueKind.String)
+                    return err.GetString();
+            }
+            // Formato: { "message": "..." }
             if (doc.RootElement.TryGetProperty("message", out var msg))
                 return msg.GetString();
-            if (doc.RootElement.TryGetProperty("error", out var err))
-                return err.GetString();
         }
         catch { }
         return null;
