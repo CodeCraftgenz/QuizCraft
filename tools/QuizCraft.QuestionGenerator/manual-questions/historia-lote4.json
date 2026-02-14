@@ -1,0 +1,377 @@
+[
+  {
+    "Subject": "História",
+    "Topic": "República",
+    "Type": "MultipleChoice",
+    "Statement": "Qual foi o principal fator que levou à Proclamação da República no Brasil em 1889?",
+    "Explanation": "A Proclamação da República resultou de uma combinação de fatores, sendo o descontentamento dos militares com a monarquia um dos mais decisivos. O Marechal Deodoro da Fonseca liderou o golpe que depôs o imperador D. Pedro II em 15 de novembro de 1889.",
+    "Difficulty": 1,
+    "Tags": ["EM", "História", "Lote4", "República"],
+    "Choices": [
+      { "Text": "A invasão de tropas estrangeiras no território brasileiro", "IsCorrect": false },
+      { "Text": "A pressão popular por meio de eleições diretas", "IsCorrect": false },
+      { "Text": "A abdicação voluntária de D. Pedro II ao trono", "IsCorrect": false },
+      { "Text": "O descontentamento dos militares e a crise do regime monárquico", "IsCorrect": true }
+    ]
+  },
+  {
+    "Subject": "História",
+    "Topic": "República",
+    "Type": "MultipleChoice",
+    "Statement": "A chamada 'política do café-com-leite', praticada durante a República Velha, consistia em:",
+    "Explanation": "A política do café-com-leite foi um acordo entre as oligarquias de São Paulo (produtores de café) e Minas Gerais (produtores de leite) para se alternarem no controle da presidência da República, garantindo a hegemonia desses dois estados na política nacional.",
+    "Difficulty": 2,
+    "Tags": ["EM", "História", "Lote4", "República"],
+    "Choices": [
+      { "Text": "Uma política de exportação de produtos agrícolas para a Europa", "IsCorrect": false },
+      { "Text": "A distribuição igualitária de terras entre pequenos agricultores", "IsCorrect": false },
+      { "Text": "A alternância de poder entre as oligarquias de São Paulo e Minas Gerais na presidência", "IsCorrect": true },
+      { "Text": "Um programa de incentivo à industrialização nas regiões Sul e Sudeste", "IsCorrect": false }
+    ]
+  },
+  {
+    "Subject": "História",
+    "Topic": "República",
+    "Type": "MultipleChoice",
+    "Statement": "O coronelismo, fenômeno político característico da República Velha, pode ser definido como:",
+    "Explanation": "O coronelismo era um sistema de poder político local em que grandes proprietários rurais, chamados coronéis, exerciam domínio sobre a população de suas regiões, controlando votos por meio de favores, ameaças e fraudes eleitorais, como o voto de cabresto.",
+    "Difficulty": 3,
+    "Tags": ["EM", "História", "Lote4", "República"],
+    "Choices": [
+      { "Text": "O domínio político exercido por chefes militares nas grandes capitais", "IsCorrect": false },
+      { "Text": "A organização de milícias armadas para combater movimentos sociais urbanos", "IsCorrect": false },
+      { "Text": "Um sistema parlamentarista em que o poder era dividido entre os partidos", "IsCorrect": false },
+      { "Text": "O poder político exercido por grandes proprietários rurais que controlavam o voto em suas regiões", "IsCorrect": true }
+    ]
+  },
+  {
+    "Subject": "História",
+    "Topic": "República",
+    "Type": "MultipleChoice",
+    "Statement": "O movimento tenentista da década de 1920 tinha como principal reivindicação:",
+    "Explanation": "O tenentismo foi um movimento liderado por jovens oficiais do Exército que contestavam as oligarquias da República Velha. Eles defendiam reformas políticas como o voto secreto, a moralização das eleições e a centralização do poder, opondo-se ao coronelismo e às fraudes eleitorais.",
+    "Difficulty": 3,
+    "Tags": ["EM", "História", "Lote4", "República"],
+    "Choices": [
+      { "Text": "A reforma política e o fim das fraudes eleitorais praticadas pelas oligarquias", "IsCorrect": true },
+      { "Text": "A implantação de um regime socialista no Brasil", "IsCorrect": false },
+      { "Text": "A restauração da monarquia com o retorno da família imperial", "IsCorrect": false },
+      { "Text": "A separação dos estados do Sul para formar um novo país", "IsCorrect": false }
+    ]
+  },
+  {
+    "Subject": "História",
+    "Topic": "República",
+    "Type": "MultipleChoice",
+    "Statement": "A Revolta da Vacina, ocorrida em 1904 no Rio de Janeiro, foi motivada principalmente por:",
+    "Explanation": "A Revolta da Vacina ocorreu em 1904, quando o governo de Rodrigues Alves tornou obrigatória a vacinação contra a varíola. A população, revoltada com a forma autoritária da campanha e com as reformas urbanas que desalojavam famílias pobres, reagiu com protestos violentos nas ruas do Rio de Janeiro.",
+    "Difficulty": 2,
+    "Tags": ["EM", "História", "Lote4", "República"],
+    "Choices": [
+      { "Text": "A proibição do comércio de escravos na capital federal", "IsCorrect": false },
+      { "Text": "A insatisfação popular com a vacinação obrigatória e as reformas urbanas autoritárias", "IsCorrect": true },
+      { "Text": "A cobrança de impostos abusivos sobre alimentos básicos", "IsCorrect": false },
+      { "Text": "A tentativa de golpe militar contra o presidente Rodrigues Alves", "IsCorrect": false }
+    ]
+  },
+  {
+    "Subject": "História",
+    "Topic": "República",
+    "Type": "MultipleChoice",
+    "Statement": "Durante a República Velha, a chamada 'política dos governadores', implementada por Campos Sales, tinha como objetivo:",
+    "Explanation": "A política dos governadores foi um pacto criado pelo presidente Campos Sales (1898-1902) para garantir estabilidade política. O governo federal apoiava os governadores estaduais e, em troca, eles garantiam a eleição de deputados aliados ao presidente, consolidando o poder das oligarquias regionais.",
+    "Difficulty": 3,
+    "Tags": ["EM", "História", "Lote4", "República"],
+    "Choices": [
+      { "Text": "Garantir a autonomia total dos estados, eliminando a influência do governo federal", "IsCorrect": false },
+      { "Text": "Promover eleições livres e democráticas em todos os estados brasileiros", "IsCorrect": false },
+      { "Text": "Estabelecer apoio mútuo entre o presidente e os governadores para manter a estabilidade política", "IsCorrect": true },
+      { "Text": "Transferir a capital da República para o interior do país", "IsCorrect": false }
+    ]
+  },
+  {
+    "Subject": "História",
+    "Topic": "Era Vargas",
+    "Type": "MultipleChoice",
+    "Statement": "A Revolução de 1930, que levou Getúlio Vargas ao poder, foi desencadeada principalmente por:",
+    "Explanation": "A Revolução de 1930 ocorreu após o presidente Washington Luís romper a alternância da política do café-com-leite e indicar o paulista Júlio Prestes como sucessor, em vez de apoiar um candidato mineiro. A Aliança Liberal, liderada por Vargas, organizou o movimento armado que depôs o governo.",
+    "Difficulty": 1,
+    "Tags": ["EM", "História", "Lote4", "Era Vargas"],
+    "Choices": [
+      { "Text": "A crise da política oligárquica e a ruptura da alternância de poder entre SP e MG", "IsCorrect": true },
+      { "Text": "A invasão de tropas argentinas no sul do Brasil", "IsCorrect": false },
+      { "Text": "A exigência popular por uma reforma agrária imediata", "IsCorrect": false },
+      { "Text": "O desejo de Vargas de implementar o comunismo no Brasil", "IsCorrect": false }
+    ]
+  },
+  {
+    "Subject": "História",
+    "Topic": "Era Vargas",
+    "Type": "MultipleChoice",
+    "Statement": "O Estado Novo, regime ditatorial instaurado por Getúlio Vargas em 1937, caracterizou-se por:",
+    "Explanation": "O Estado Novo foi um regime autoritário que durou de 1937 a 1945. Vargas fechou o Congresso, outorgou uma nova Constituição centralizada, censurou a imprensa, perseguiu opositores e concentrou o poder no Executivo, governando sem eleições.",
+    "Difficulty": 2,
+    "Tags": ["EM", "História", "Lote4", "Era Vargas"],
+    "Choices": [
+      { "Text": "O fechamento do Congresso, censura à imprensa e centralização do poder", "IsCorrect": true },
+      { "Text": "A ampliação das liberdades democráticas e eleições regulares", "IsCorrect": false },
+      { "Text": "A descentralização administrativa e fortalecimento dos governadores", "IsCorrect": false },
+      { "Text": "A abertura econômica total ao capital estrangeiro", "IsCorrect": false }
+    ]
+  },
+  {
+    "Subject": "História",
+    "Topic": "Era Vargas",
+    "Type": "MultipleChoice",
+    "Statement": "A Consolidação das Leis do Trabalho (CLT), criada durante o governo Vargas em 1943, representou:",
+    "Explanation": "A CLT reuniu e sistematizou a legislação trabalhista brasileira, garantindo direitos como salário mínimo, jornada de trabalho de 8 horas, férias remuneradas, carteira de trabalho e regulamentação de sindicatos. Foi uma das marcas mais duradouras da Era Vargas.",
+    "Difficulty": 1,
+    "Tags": ["EM", "História", "Lote4", "Era Vargas"],
+    "Choices": [
+      { "Text": "A abolição de todos os sindicatos existentes no país", "IsCorrect": false },
+      { "Text": "A sistematização dos direitos trabalhistas, como salário mínimo, férias e jornada de trabalho regulamentada", "IsCorrect": true },
+      { "Text": "A privatização das empresas estatais criadas no período", "IsCorrect": false },
+      { "Text": "O fim da intervenção do Estado nas relações entre patrões e empregados", "IsCorrect": false }
+    ]
+  },
+  {
+    "Subject": "História",
+    "Topic": "Era Vargas",
+    "Type": "MultipleChoice",
+    "Statement": "A política nacionalista de Vargas no setor econômico resultou na criação de empresas estatais estratégicas. Qual das alternativas abaixo exemplifica essa política?",
+    "Explanation": "Vargas adotou uma política econômica nacionalista, criando empresas estatais em setores considerados estratégicos. A Companhia Siderúrgica Nacional (CSN), inaugurada em 1941 em Volta Redonda, e a Petrobras, criada em 1953, são os exemplos mais emblemáticos desse projeto de industrialização nacional.",
+    "Difficulty": 3,
+    "Tags": ["EM", "História", "Lote4", "Era Vargas"],
+    "Choices": [
+      { "Text": "A criação do Banco do Brasil para financiar exportações de café", "IsCorrect": false },
+      { "Text": "A venda de ferrovias brasileiras para empresas britânicas", "IsCorrect": false },
+      { "Text": "A abertura irrestrita do mercado brasileiro para importações norte-americanas", "IsCorrect": false },
+      { "Text": "A fundação da Companhia Siderúrgica Nacional (CSN) e, posteriormente, da Petrobras", "IsCorrect": true }
+    ]
+  },
+  {
+    "Subject": "História",
+    "Topic": "Era Vargas",
+    "Type": "MultipleChoice",
+    "Statement": "A Revolução Constitucionalista de 1932, ocorrida em São Paulo, teve como principal motivação:",
+    "Explanation": "A Revolução Constitucionalista de 1932 foi um levante armado promovido pela elite paulista contra o governo provisório de Vargas. Os paulistas exigiam a convocação de uma Assembleia Constituinte e a promulgação de uma nova Constituição para o país, além de reclamarem da perda de autonomia do estado.",
+    "Difficulty": 3,
+    "Tags": ["EM", "História", "Lote4", "Era Vargas"],
+    "Choices": [
+      { "Text": "O desejo de São Paulo de se separar do restante do Brasil", "IsCorrect": false },
+      { "Text": "A exigência de uma nova Constituição e a oposição ao governo provisório de Vargas", "IsCorrect": true },
+      { "Text": "A oposição à entrada do Brasil na Segunda Guerra Mundial", "IsCorrect": false },
+      { "Text": "A insatisfação com a política de valorização do café promovida por Vargas", "IsCorrect": false }
+    ]
+  },
+  {
+    "Subject": "História",
+    "Topic": "Era Vargas",
+    "Type": "MultipleChoice",
+    "Statement": "O processo de industrialização promovido por Vargas durante o Estado Novo foi impulsionado, em grande parte, por qual contexto internacional?",
+    "Explanation": "A Segunda Guerra Mundial (1939-1945) dificultou as importações de produtos industrializados da Europa e dos EUA, o que incentivou o governo Vargas a acelerar a industrialização brasileira por meio da substituição de importações, promovendo a criação de indústrias de base no país.",
+    "Difficulty": 4,
+    "Tags": ["EM", "História", "Lote4", "Era Vargas"],
+    "Choices": [
+      { "Text": "A Revolução Russa de 1917 e a expansão do comunismo", "IsCorrect": false },
+      { "Text": "A crise provocada pela Primeira Guerra Mundial em 1914", "IsCorrect": false },
+      { "Text": "O avanço da globalização e dos acordos de livre-comércio", "IsCorrect": false },
+      { "Text": "A Segunda Guerra Mundial, que dificultou importações e estimulou a substituição por produção nacional", "IsCorrect": true }
+    ]
+  },
+  {
+    "Subject": "História",
+    "Topic": "Ditadura",
+    "Type": "MultipleChoice",
+    "Statement": "O golpe militar de 1964 que depôs o presidente João Goulart foi justificado pelos militares como uma ação para:",
+    "Explanation": "Os militares alegaram que o golpe de 1964 era necessário para combater uma suposta ameaça comunista no Brasil. O presidente João Goulart, que propunha reformas de base (agrária, urbana, educacional), foi acusado de ser ligado ao comunismo, o que serviu de pretexto para a intervenção militar no contexto da Guerra Fria.",
+    "Difficulty": 2,
+    "Tags": ["EM", "História", "Lote4", "Ditadura"],
+    "Choices": [
+      { "Text": "Promover a reforma agrária que o Congresso se recusava a aprovar", "IsCorrect": false },
+      { "Text": "Restabelecer a monarquia constitucional no Brasil", "IsCorrect": false },
+      { "Text": "Atender às reivindicações dos movimentos estudantis por mais democracia", "IsCorrect": false },
+      { "Text": "Combater a suposta ameaça comunista e preservar a ordem no país", "IsCorrect": true }
+    ]
+  },
+  {
+    "Subject": "História",
+    "Topic": "Ditadura",
+    "Type": "MultipleChoice",
+    "Statement": "O Ato Institucional nº 5 (AI-5), decretado em dezembro de 1968, é considerado o mais autoritário da ditadura militar porque:",
+    "Explanation": "O AI-5 foi o instrumento mais repressivo da ditadura militar brasileira. Ele dava ao presidente poderes para fechar o Congresso, cassar mandatos, suspender o habeas corpus para crimes políticos e censurar a imprensa, eliminando as garantias constitucionais dos cidadãos.",
+    "Difficulty": 3,
+    "Tags": ["EM", "História", "Lote4", "Ditadura"],
+    "Choices": [
+      { "Text": "Permitiu o fechamento do Congresso, a cassação de mandatos e a suspensão do habeas corpus", "IsCorrect": true },
+      { "Text": "Convocou novas eleições diretas para presidente da República", "IsCorrect": false },
+      { "Text": "Criou novos partidos políticos para ampliar a representação popular", "IsCorrect": false },
+      { "Text": "Determinou o fim da censura e a liberdade de expressão no país", "IsCorrect": false }
+    ]
+  },
+  {
+    "Subject": "História",
+    "Topic": "Ditadura",
+    "Type": "MultipleChoice",
+    "Statement": "O chamado 'milagre econômico brasileiro', ocorrido entre 1969 e 1973, caracterizou-se por:",
+    "Explanation": "O milagre econômico foi um período de intenso crescimento do PIB brasileiro, com taxas que chegaram a 14% ao ano. Esse crescimento foi impulsionado por investimentos em infraestrutura e pela entrada de capital estrangeiro. Porém, o crescimento concentrou renda e aumentou as desigualdades sociais, além de elevar a dívida externa.",
+    "Difficulty": 3,
+    "Tags": ["EM", "História", "Lote4", "Ditadura"],
+    "Choices": [
+      { "Text": "A redução drástica da dívida externa e a distribuição igualitária de renda", "IsCorrect": false },
+      { "Text": "A estagnação econômica e a fuga de capitais estrangeiros do país", "IsCorrect": false },
+      { "Text": "Altas taxas de crescimento econômico, grandes obras de infraestrutura e aumento da concentração de renda", "IsCorrect": true },
+      { "Text": "A reforma agrária em larga escala e a extinção do latifúndio no Brasil", "IsCorrect": false }
+    ]
+  },
+  {
+    "Subject": "História",
+    "Topic": "Ditadura",
+    "Type": "MultipleChoice",
+    "Statement": "Durante a ditadura militar brasileira, a censura aos meios de comunicação e às artes teve como consequência:",
+    "Explanation": "A censura durante a ditadura militar proibia a divulgação de notícias contrárias ao regime e controlava a produção artística. Muitos artistas, músicos e escritores usaram metáforas e linguagem figurada para criticar o governo de forma velada, como Chico Buarque, Caetano Veloso e Gilberto Gil.",
+    "Difficulty": 2,
+    "Tags": ["EM", "História", "Lote4", "Ditadura"],
+    "Choices": [
+      { "Text": "A proibição de conteúdos considerados subversivos e o uso de linguagem figurada por artistas para driblar o controle", "IsCorrect": true },
+      { "Text": "O fim completo da produção cultural no Brasil durante todo o período militar", "IsCorrect": false },
+      { "Text": "O incentivo oficial à produção de obras críticas ao governo", "IsCorrect": false },
+      { "Text": "A liberdade total para a imprensa internacional noticiar os fatos no Brasil", "IsCorrect": false }
+    ]
+  },
+  {
+    "Subject": "História",
+    "Topic": "Ditadura",
+    "Type": "MultipleChoice",
+    "Statement": "O processo de abertura política durante o governo do general Ernesto Geisel (1974-1979) foi definido pelo próprio como:",
+    "Explanation": "O general Geisel definiu a abertura política como um processo 'lento, gradual e seguro', ou seja, uma transição controlada pelos militares para evitar mudanças bruscas. Essa estratégia visava garantir que os militares mantivessem o controle da transição para a democracia, evitando rupturas.",
+    "Difficulty": 3,
+    "Tags": ["EM", "História", "Lote4", "Ditadura"],
+    "Choices": [
+      { "Text": "Uma revolução popular que derrubaria o regime de forma imediata", "IsCorrect": false },
+      { "Text": "Uma abertura lenta, gradual e segura, controlada pelo governo militar", "IsCorrect": true },
+      { "Text": "Um golpe dentro do próprio regime para substituir a cúpula militar", "IsCorrect": false },
+      { "Text": "Uma eleição direta para presidente convocada para o ano seguinte", "IsCorrect": false }
+    ]
+  },
+  {
+    "Subject": "História",
+    "Topic": "Ditadura",
+    "Type": "MultipleChoice",
+    "Statement": "Analise a seguinte afirmação: 'O bipartidarismo imposto pela ditadura militar brasileira, com a criação da ARENA e do MDB, teve como objetivo principal dar uma fachada democrática ao regime autoritário.' Essa interpretação é sustentada pelo fato de que:",
+    "Explanation": "O AI-2 (1965) extinguiu os partidos existentes e impôs o bipartidarismo. A ARENA era o partido de sustentação do governo militar, enquanto o MDB funcionava como oposição consentida. As eleições eram controladas e o MDB tinha atuação limitada, servindo para dar aparência democrática ao regime perante a comunidade internacional.",
+    "Difficulty": 5,
+    "Tags": ["EM", "História", "Lote4", "Ditadura"],
+    "Choices": [
+      { "Text": "A ARENA e o MDB tinham plena liberdade para propor e aprovar qualquer legislação no Congresso", "IsCorrect": false },
+      { "Text": "O MDB conseguiu efetivamente bloquear todas as medidas autoritárias do regime militar", "IsCorrect": false },
+      { "Text": "A ARENA funcionava como partido de sustentação do governo e o MDB como oposição consentida, com atuação limitada pelo regime", "IsCorrect": true },
+      { "Text": "Ambos os partidos foram criados por movimentos populares independentes do governo militar", "IsCorrect": false }
+    ]
+  },
+  {
+    "Subject": "História",
+    "Topic": "Nova República",
+    "Type": "MultipleChoice",
+    "Statement": "O movimento das 'Diretas Já', ocorrido em 1983-1984, reivindicava:",
+    "Explanation": "O movimento Diretas Já foi uma das maiores mobilizações populares da história do Brasil. Milhões de pessoas foram às ruas exigir a aprovação da Emenda Dante de Oliveira, que propunha eleições diretas para presidente. A emenda foi rejeitada pelo Congresso, mas o movimento enfraqueceu o regime militar.",
+    "Difficulty": 1,
+    "Tags": ["EM", "História", "Lote4", "Nova República"],
+    "Choices": [
+      { "Text": "A aprovação de eleições diretas para presidente da República", "IsCorrect": true },
+      { "Text": "A volta da monarquia constitucional ao Brasil", "IsCorrect": false },
+      { "Text": "A permanência dos militares no poder por mais um mandato", "IsCorrect": false },
+      { "Text": "A separação do Brasil em dois países independentes", "IsCorrect": false }
+    ]
+  },
+  {
+    "Subject": "História",
+    "Topic": "Nova República",
+    "Type": "MultipleChoice",
+    "Statement": "A Constituição de 1988, conhecida como 'Constituição Cidadã', recebeu esse nome porque:",
+    "Explanation": "A Constituição de 1988 foi chamada de 'Cidadã' pelo deputado Ulysses Guimarães porque ampliou significativamente os direitos individuais, sociais e políticos dos brasileiros. Ela garantiu direitos como saúde pública universal (SUS), educação gratuita, proteção ao trabalhador e liberdade de expressão.",
+    "Difficulty": 1,
+    "Tags": ["EM", "História", "Lote4", "Nova República"],
+    "Choices": [
+      { "Text": "Foi redigida exclusivamente por cidadãos comuns, sem participação de políticos", "IsCorrect": false },
+      { "Text": "Restringiu os direitos civis para garantir maior segurança nacional", "IsCorrect": false },
+      { "Text": "Ampliou significativamente os direitos individuais, sociais e políticos dos brasileiros", "IsCorrect": true },
+      { "Text": "Concedeu cidadania brasileira a todos os estrangeiros residentes no país", "IsCorrect": false }
+    ]
+  },
+  {
+    "Subject": "História",
+    "Topic": "Nova República",
+    "Type": "MultipleChoice",
+    "Statement": "O Plano Real, implementado em 1994 durante o governo de Itamar Franco, teve como principal objetivo:",
+    "Explanation": "O Plano Real foi um plano de estabilização econômica que criou uma nova moeda, o real, e conseguiu controlar a hiperinflação que assolava o Brasil havia décadas. O sucesso do plano foi fundamental para a eleição de Fernando Henrique Cardoso, ministro da Fazenda responsável por sua implementação.",
+    "Difficulty": 3,
+    "Tags": ["EM", "História", "Lote4", "Nova República"],
+    "Choices": [
+      { "Text": "Aumentar os gastos públicos para estimular o crescimento econômico", "IsCorrect": false },
+      { "Text": "Controlar a hiperinflação por meio da criação de uma nova moeda estável", "IsCorrect": true },
+      { "Text": "Substituir o capitalismo por um modelo econômico socialista", "IsCorrect": false },
+      { "Text": "Nacionalizar todas as empresas estrangeiras que operavam no Brasil", "IsCorrect": false }
+    ]
+  },
+  {
+    "Subject": "História",
+    "Topic": "Nova República",
+    "Type": "MultipleChoice",
+    "Statement": "O impeachment do presidente Fernando Collor de Mello, em 1992, foi motivado por:",
+    "Explanation": "Fernando Collor de Mello sofreu um processo de impeachment em 1992 após denúncias de corrupção envolvendo seu tesoureiro de campanha, Paulo César Farias. Grandes manifestações populares, com destaque para o movimento dos 'caras-pintadas' (estudantes), pressionaram o Congresso a aprovar o afastamento.",
+    "Difficulty": 3,
+    "Tags": ["EM", "História", "Lote4", "Nova República"],
+    "Choices": [
+      { "Text": "Denúncias de corrupção no governo e grande pressão popular pelo afastamento", "IsCorrect": true },
+      { "Text": "Um golpe militar que depôs o presidente à força", "IsCorrect": false },
+      { "Text": "A recusa do presidente em promulgar a Constituição de 1988", "IsCorrect": false },
+      { "Text": "A declaração de guerra a um país vizinho sem autorização do Congresso", "IsCorrect": false }
+    ]
+  },
+  {
+    "Subject": "História",
+    "Topic": "Nova República",
+    "Type": "MultipleChoice",
+    "Statement": "Compare os planos econômicos Cruzado (1986) e Real (1994) no contexto da Nova República. Uma diferença fundamental entre eles foi que:",
+    "Explanation": "O Plano Cruzado, do governo Sarney, congelou preços e salários como estratégia para conter a inflação, o que gerou desabastecimento e fracassou em poucos meses. Já o Plano Real adotou uma transição monetária gradual com a URV e ajuste fiscal, conseguindo estabilizar a economia de forma duradoura.",
+    "Difficulty": 5,
+    "Tags": ["EM", "História", "Lote4", "Nova República"],
+    "Choices": [
+      { "Text": "Ambos os planos adotaram estratégias idênticas de congelamento de preços com resultados semelhantes", "IsCorrect": false },
+      { "Text": "O Plano Cruzado apostou no congelamento de preços e fracassou, enquanto o Plano Real adotou transição monetária gradual e obteve sucesso duradouro", "IsCorrect": true },
+      { "Text": "O Plano Real fracassou em controlar a inflação, enquanto o Cruzado trouxe estabilidade permanente", "IsCorrect": false },
+      { "Text": "O Plano Cruzado criou o real como moeda e o Plano Real restabeleceu o cruzado", "IsCorrect": false }
+    ]
+  },
+  {
+    "Subject": "História",
+    "Topic": "Nova República",
+    "Type": "MultipleChoice",
+    "Statement": "A Constituição de 1988 estabeleceu importantes avanços na área dos direitos sociais. Analise qual das seguintes conquistas foi garantida por ela e representou uma mudança estrutural no acesso à saúde no Brasil:",
+    "Explanation": "A Constituição de 1988 criou o Sistema Único de Saúde (SUS), estabelecendo que a saúde é um direito de todos e dever do Estado. Esse foi um avanço estrutural enorme, pois antes apenas trabalhadores com carteira assinada tinham acesso ao sistema público de saúde, excluindo grande parte da população.",
+    "Difficulty": 4,
+    "Tags": ["EM", "História", "Lote4", "Nova República"],
+    "Choices": [
+      { "Text": "A privatização de todos os hospitais públicos para melhorar a qualidade do atendimento", "IsCorrect": false },
+      { "Text": "A criação do Sistema Único de Saúde (SUS), garantindo saúde pública universal como direito de todos", "IsCorrect": true },
+      { "Text": "A restrição do atendimento médico gratuito exclusivamente para funcionários públicos", "IsCorrect": false },
+      { "Text": "A obrigatoriedade de contratação de planos de saúde privados por todos os cidadãos", "IsCorrect": false }
+    ]
+  },
+  {
+    "Subject": "História",
+    "Topic": "Ditadura",
+    "Type": "MultipleChoice",
+    "Statement": "Qual foi o papel da Doutrina de Segurança Nacional no contexto do golpe militar de 1964 e da manutenção do regime?",
+    "Explanation": "A Doutrina de Segurança Nacional, desenvolvida no contexto da Guerra Fria e difundida pela Escola Superior de Guerra (ESG), identificava o 'inimigo interno' como a principal ameaça ao país. Essa doutrina serviu como base ideológica para justificar a repressão a movimentos sociais, sindicatos e opositores políticos durante toda a ditadura.",
+    "Difficulty": 4,
+    "Tags": ["EM", "História", "Lote4", "Ditadura"],
+    "Choices": [
+      { "Text": "Promoveu o diálogo entre governo e oposição para construir um consenso nacional", "IsCorrect": false },
+      { "Text": "Defendia a neutralidade do Brasil nos conflitos internacionais da Guerra Fria", "IsCorrect": false },
+      { "Text": "Serviu como base ideológica para identificar 'inimigos internos' e justificar a repressão política", "IsCorrect": true },
+      { "Text": "Estabeleceu a obrigatoriedade de eleições diretas em todos os níveis de governo", "IsCorrect": false }
+    ]
+  }
+]

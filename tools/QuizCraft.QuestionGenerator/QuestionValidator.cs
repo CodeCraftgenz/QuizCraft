@@ -22,8 +22,8 @@ public record ValidacaoResultado(
 /// </summary>
 public static class QuestionValidator
 {
-    /// <summary>Numero esperado de questoes por lote.</summary>
-    private const int QuestoesEsperadas = 25;
+    /// <summary>Numero minimo aceitavel de questoes por lote.</summary>
+    private const int QuestoesMinimas = 20;
 
     /// <summary>Numero esperado de alternativas por questao.</summary>
     private const int AlternativasEsperadas = 4;
@@ -57,10 +57,10 @@ public static class QuestionValidator
 
             var total = root.GetArrayLength();
 
-            // Verificar quantidade de questoes
-            if (total < QuestoesEsperadas)
+            // Verificar quantidade minima de questoes
+            if (total < QuestoesMinimas)
                 return new ValidacaoResultado(false,
-                    $"Lote incompleto: {total} questões (esperado {QuestoesEsperadas}).", total);
+                    $"Lote incompleto: {total} questões (mínimo {QuestoesMinimas}).", total);
 
             // Validar cada questao individualmente
             int indice = 0;

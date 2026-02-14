@@ -1,0 +1,377 @@
+[
+  {
+    "Subject": "Biologia",
+    "Topic": "Genética",
+    "Type": "MultipleChoice",
+    "Statement": "O que é um alelo?",
+    "Explanation": "Alelos são formas alternativas de um mesmo gene, ocupando a mesma posição (locus) em cromossomos homólogos. Cada indivíduo herda um alelo do pai e outro da mãe para cada gene.",
+    "Difficulty": 1,
+    "Tags": ["EM", "Biologia", "Lote2", "Genética"],
+    "Choices": [
+      { "Text": "Um tipo de célula reprodutiva", "IsCorrect": false },
+      { "Text": "Uma forma alternativa de um mesmo gene", "IsCorrect": true },
+      { "Text": "Uma mutação no DNA", "IsCorrect": false },
+      { "Text": "Um cromossomo sexual", "IsCorrect": false }
+    ]
+  },
+  {
+    "Subject": "Biologia",
+    "Topic": "Genética",
+    "Type": "MultipleChoice",
+    "Statement": "Qual é a diferença entre genótipo e fenótipo?",
+    "Explanation": "O genótipo é a constituição genética de um organismo (os alelos que ele possui), enquanto o fenótipo é a expressão observável dessas características, resultante da interação entre o genótipo e o ambiente.",
+    "Difficulty": 1,
+    "Tags": ["EM", "Biologia", "Lote2", "Genética"],
+    "Choices": [
+      { "Text": "Genótipo é a aparência externa e fenótipo é o conjunto de genes", "IsCorrect": false },
+      { "Text": "Genótipo se refere apenas a doenças e fenótipo a características normais", "IsCorrect": false },
+      { "Text": "Genótipo é a composição genética e fenótipo é a característica observável", "IsCorrect": true },
+      { "Text": "Não há diferença, são sinônimos", "IsCorrect": false }
+    ]
+  },
+  {
+    "Subject": "Biologia",
+    "Topic": "Genética",
+    "Type": "MultipleChoice",
+    "Statement": "Em um organismo diploide, um indivíduo que possui dois alelos idênticos para um determinado gene é chamado de:",
+    "Explanation": "Um indivíduo homozigoto possui dois alelos iguais para um determinado gene (por exemplo, AA ou aa). Quando os alelos são diferentes (Aa), o indivíduo é chamado de heterozigoto.",
+    "Difficulty": 2,
+    "Tags": ["EM", "Biologia", "Lote2", "Genética"],
+    "Choices": [
+      { "Text": "Heterozigoto", "IsCorrect": false },
+      { "Text": "Diploide", "IsCorrect": false },
+      { "Text": "Haploide", "IsCorrect": false },
+      { "Text": "Homozigoto", "IsCorrect": true }
+    ]
+  },
+  {
+    "Subject": "Biologia",
+    "Topic": "Genética",
+    "Type": "MultipleChoice",
+    "Statement": "Se um alelo dominante (A) determina a cor púrpura das flores e um alelo recessivo (a) determina a cor branca, qual será o fenótipo de um indivíduo com genótipo Aa?",
+    "Explanation": "Em um caso de dominância completa, o alelo dominante (A) se expressa mesmo na presença de um alelo recessivo (a). Assim, o indivíduo heterozigoto (Aa) apresenta o fenótipo determinado pelo alelo dominante, ou seja, flores púrpuras.",
+    "Difficulty": 2,
+    "Tags": ["EM", "Biologia", "Lote2", "Genética"],
+    "Choices": [
+      { "Text": "Flores brancas", "IsCorrect": false },
+      { "Text": "Flores púrpuras", "IsCorrect": true },
+      { "Text": "Flores rosa (intermediário)", "IsCorrect": false },
+      { "Text": "Flores púrpuras e brancas misturadas", "IsCorrect": false }
+    ]
+  },
+  {
+    "Subject": "Biologia",
+    "Topic": "Genética",
+    "Type": "MultipleChoice",
+    "Statement": "A pleiotropia é um fenômeno genético no qual:",
+    "Explanation": "Na pleiotropia, um único gene afeta múltiplas características fenotípicas do organismo. Um exemplo clássico é a anemia falciforme, na qual uma mutação em um único gene causa alterações nos glóbulos vermelhos, dores, problemas circulatórios e outras manifestações.",
+    "Difficulty": 3,
+    "Tags": ["EM", "Biologia", "Lote2", "Genética"],
+    "Choices": [
+      { "Text": "Vários genes determinam uma única característica", "IsCorrect": false },
+      { "Text": "Um gene é completamente dominante sobre outro", "IsCorrect": false },
+      { "Text": "Um único gene influencia múltiplas características fenotípicas", "IsCorrect": true },
+      { "Text": "Os genes estão ligados no mesmo cromossomo", "IsCorrect": false }
+    ]
+  },
+  {
+    "Subject": "Biologia",
+    "Topic": "Genética",
+    "Type": "MultipleChoice",
+    "Statement": "Na herança quantitativa (poligênica), como a cor da pele humana, qual das seguintes afirmações é correta?",
+    "Explanation": "Na herança quantitativa ou poligênica, várias pares de genes contribuem de forma aditiva para a expressão de uma única característica, resultando em uma variação contínua no fenótipo. A cor da pele humana é um exemplo clássico, sendo influenciada por pelo menos três pares de genes.",
+    "Difficulty": 4,
+    "Tags": ["EM", "Biologia", "Lote2", "Genética"],
+    "Choices": [
+      { "Text": "Apenas um par de alelos determina a característica", "IsCorrect": false },
+      { "Text": "A característica segue a proporção clássica de 3:1", "IsCorrect": false },
+      { "Text": "O ambiente não exerce influência sobre o fenótipo", "IsCorrect": false },
+      { "Text": "Múltiplos genes contribuem de forma aditiva para a expressão do fenótipo", "IsCorrect": true }
+    ]
+  },
+  {
+    "Subject": "Biologia",
+    "Topic": "Genética",
+    "Type": "MultipleChoice",
+    "Statement": "Em genética de populações, o Teorema de Hardy-Weinberg estabelece que as frequências alélicas em uma população permanecem constantes ao longo das gerações desde que:",
+    "Explanation": "O equilíbrio de Hardy-Weinberg exige cinco condições: população infinitamente grande, cruzamentos aleatórios (panmixia), ausência de mutação, ausência de migração e ausência de seleção natural. Na prática, essas condições nunca são totalmente atendidas, mas o modelo serve como referência para estudar a evolução.",
+    "Difficulty": 5,
+    "Tags": ["EM", "Biologia", "Lote2", "Genética"],
+    "Choices": [
+      { "Text": "Haja seleção natural atuando sobre a população", "IsCorrect": false },
+      { "Text": "Ocorram mutações frequentes nos genes", "IsCorrect": false },
+      { "Text": "A população seja grande, com cruzamentos aleatórios, sem mutação, migração ou seleção", "IsCorrect": true },
+      { "Text": "Haja fluxo gênico constante entre populações vizinhas", "IsCorrect": false }
+    ]
+  },
+  {
+    "Subject": "Biologia",
+    "Topic": "DNA/RNA",
+    "Type": "MultipleChoice",
+    "Statement": "Quais são as bases nitrogenadas encontradas no DNA?",
+    "Explanation": "O DNA possui quatro bases nitrogenadas: adenina (A), timina (T), citosina (C) e guanina (G). A adenina se pareia com a timina por duas ligações de hidrogênio, e a citosina se pareia com a guanina por três ligações de hidrogênio.",
+    "Difficulty": 1,
+    "Tags": ["EM", "Biologia", "Lote2", "DNA/RNA"],
+    "Choices": [
+      { "Text": "Adenina, uracila, citosina e guanina", "IsCorrect": false },
+      { "Text": "Adenina, timina, citosina e guanina", "IsCorrect": true },
+      { "Text": "Adenina, timina, uracila e guanina", "IsCorrect": false },
+      { "Text": "Citosina, guanina, uracila e timina", "IsCorrect": false }
+    ]
+  },
+  {
+    "Subject": "Biologia",
+    "Topic": "DNA/RNA",
+    "Type": "MultipleChoice",
+    "Statement": "Qual é a principal diferença estrutural entre o DNA e o RNA?",
+    "Explanation": "O DNA é uma molécula de fita dupla com desoxirribose como açúcar, enquanto o RNA é geralmente de fita simples e contém ribose. Além disso, o RNA possui uracila no lugar da timina encontrada no DNA.",
+    "Difficulty": 1,
+    "Tags": ["EM", "Biologia", "Lote2", "DNA/RNA"],
+    "Choices": [
+      { "Text": "O DNA possui ribose e o RNA possui desoxirribose", "IsCorrect": false },
+      { "Text": "O DNA é de fita simples e o RNA é de fita dupla", "IsCorrect": false },
+      { "Text": "O DNA possui uracila e o RNA possui timina", "IsCorrect": false },
+      { "Text": "O DNA possui desoxirribose e fita dupla, enquanto o RNA possui ribose e é geralmente de fita simples", "IsCorrect": true }
+    ]
+  },
+  {
+    "Subject": "Biologia",
+    "Topic": "DNA/RNA",
+    "Type": "MultipleChoice",
+    "Statement": "O processo de transcrição consiste em:",
+    "Explanation": "A transcrição é o processo pelo qual a informação genética contida em uma fita de DNA é copiada para uma molécula de RNA mensageiro (mRNA). Esse processo é catalisado pela enzima RNA polimerase e ocorre no núcleo das células eucarióticas.",
+    "Difficulty": 2,
+    "Tags": ["EM", "Biologia", "Lote2", "DNA/RNA"],
+    "Choices": [
+      { "Text": "Copiar a informação do DNA para uma molécula de RNA mensageiro", "IsCorrect": true },
+      { "Text": "Duplicar a molécula de DNA antes da divisão celular", "IsCorrect": false },
+      { "Text": "Converter aminoácidos em proteínas nos ribossomos", "IsCorrect": false },
+      { "Text": "Reparar danos na molécula de DNA", "IsCorrect": false }
+    ]
+  },
+  {
+    "Subject": "Biologia",
+    "Topic": "DNA/RNA",
+    "Type": "MultipleChoice",
+    "Statement": "Durante a tradução, qual é a função do RNA transportador (tRNA)?",
+    "Explanation": "O RNA transportador (tRNA) tem a função de transportar aminoácidos específicos até o ribossomo durante a síntese proteica. Cada tRNA possui um anticódon que se pareia com o códon correspondente no mRNA, garantindo a sequência correta de aminoácidos na proteína.",
+    "Difficulty": 3,
+    "Tags": ["EM", "Biologia", "Lote2", "DNA/RNA"],
+    "Choices": [
+      { "Text": "Catalisar a ligação peptídica entre os aminoácidos", "IsCorrect": false },
+      { "Text": "Transportar a informação genética do núcleo ao citoplasma", "IsCorrect": false },
+      { "Text": "Transportar aminoácidos específicos ao ribossomo para a síntese proteica", "IsCorrect": true },
+      { "Text": "Formar a estrutura do ribossomo", "IsCorrect": false }
+    ]
+  },
+  {
+    "Subject": "Biologia",
+    "Topic": "DNA/RNA",
+    "Type": "MultipleChoice",
+    "Statement": "Na replicação do DNA, a enzima DNA polimerase adiciona nucleotídeos na direção:",
+    "Explanation": "A DNA polimerase sintetiza a nova fita de DNA na direção 5' para 3', adicionando nucleotídeos à extremidade 3'-OH da fita em crescimento. Como as fitas do DNA são antiparalelas, a replicação ocorre de forma contínua na fita líder e de forma descontínua (fragmentos de Okazaki) na fita retardatária.",
+    "Difficulty": 3,
+    "Tags": ["EM", "Biologia", "Lote2", "DNA/RNA"],
+    "Choices": [
+      { "Text": "3' para 5'", "IsCorrect": false },
+      { "Text": "5' para 3'", "IsCorrect": true },
+      { "Text": "Simultaneamente nas duas direções", "IsCorrect": false },
+      { "Text": "A direção depende do tipo de base nitrogenada", "IsCorrect": false }
+    ]
+  },
+  {
+    "Subject": "Biologia",
+    "Topic": "DNA/RNA",
+    "Type": "MultipleChoice",
+    "Statement": "Considerando o dogma central da biologia molecular, qual é a sequência correta do fluxo da informação genética?",
+    "Explanation": "O dogma central da biologia molecular, proposto por Francis Crick em 1958, estabelece que a informação genética flui do DNA para o RNA (transcrição) e do RNA para as proteínas (tradução). Embora existam exceções como a transcrição reversa, esse fluxo representa o caminho principal da expressão gênica.",
+    "Difficulty": 3,
+    "Tags": ["EM", "Biologia", "Lote2", "DNA/RNA"],
+    "Choices": [
+      { "Text": "RNA → DNA → Proteína", "IsCorrect": false },
+      { "Text": "Proteína → RNA → DNA", "IsCorrect": false },
+      { "Text": "DNA → Proteína → RNA", "IsCorrect": false },
+      { "Text": "DNA → RNA → Proteína", "IsCorrect": true }
+    ]
+  },
+  {
+    "Subject": "Biologia",
+    "Topic": "Mendel",
+    "Type": "MultipleChoice",
+    "Statement": "Gregor Mendel é considerado o pai da genética. Qual organismo ele utilizou em seus experimentos clássicos?",
+    "Explanation": "Mendel utilizou plantas de ervilha (Pisum sativum) em seus experimentos entre 1856 e 1863. Ele escolheu essa espécie por apresentar características de fácil observação, ciclo de vida curto, grande número de descendentes e possibilidade de autofecundação e fecundação cruzada controlada.",
+    "Difficulty": 1,
+    "Tags": ["EM", "Biologia", "Lote2", "Mendel"],
+    "Choices": [
+      { "Text": "Moscas-da-fruta (Drosophila)", "IsCorrect": false },
+      { "Text": "Camundongos de laboratório", "IsCorrect": false },
+      { "Text": "Ervilhas (Pisum sativum)", "IsCorrect": true },
+      { "Text": "Bactérias (Escherichia coli)", "IsCorrect": false }
+    ]
+  },
+  {
+    "Subject": "Biologia",
+    "Topic": "Mendel",
+    "Type": "MultipleChoice",
+    "Statement": "A Primeira Lei de Mendel, também chamada de Lei da Segregação dos Fatores, afirma que:",
+    "Explanation": "A Primeira Lei de Mendel estabelece que cada indivíduo possui dois fatores (hoje chamados de alelos) para cada característica, e esses fatores se separam durante a formação dos gametas, de modo que cada gameta recebe apenas um fator de cada par.",
+    "Difficulty": 2,
+    "Tags": ["EM", "Biologia", "Lote2", "Mendel"],
+    "Choices": [
+      { "Text": "Os genes para diferentes características são sempre herdados juntos", "IsCorrect": false },
+      { "Text": "Cada característica é determinada por um par de fatores que se segregam na formação dos gametas", "IsCorrect": true },
+      { "Text": "As características adquiridas durante a vida são transmitidas aos descendentes", "IsCorrect": false },
+      { "Text": "Todos os genes estão localizados no mesmo cromossomo", "IsCorrect": false }
+    ]
+  },
+  {
+    "Subject": "Biologia",
+    "Topic": "Mendel",
+    "Type": "MultipleChoice",
+    "Statement": "No cruzamento de dois indivíduos heterozigotos (Aa × Aa), qual é a proporção fenotípica esperada na descendência, considerando dominância completa?",
+    "Explanation": "No cruzamento Aa × Aa, a proporção genotípica esperada é 1 AA : 2 Aa : 1 aa. Como A é dominante sobre a, os indivíduos AA e Aa apresentam o fenótipo dominante, resultando em uma proporção fenotípica de 3 dominantes para 1 recessivo (3:1).",
+    "Difficulty": 2,
+    "Tags": ["EM", "Biologia", "Lote2", "Mendel"],
+    "Choices": [
+      { "Text": "1:1", "IsCorrect": false },
+      { "Text": "2:1", "IsCorrect": false },
+      { "Text": "3:1", "IsCorrect": true },
+      { "Text": "4:0", "IsCorrect": false }
+    ]
+  },
+  {
+    "Subject": "Biologia",
+    "Topic": "Mendel",
+    "Type": "MultipleChoice",
+    "Statement": "A Segunda Lei de Mendel (Lei da Segregação Independente) aplica-se a genes que:",
+    "Explanation": "A Segunda Lei de Mendel afirma que os fatores (genes) para duas ou mais características segregam-se de forma independente durante a formação dos gametas. Isso ocorre quando os genes estão localizados em cromossomos diferentes (não-homólogos), permitindo a formação de todas as combinações possíveis de gametas.",
+    "Difficulty": 3,
+    "Tags": ["EM", "Biologia", "Lote2", "Mendel"],
+    "Choices": [
+      { "Text": "Estão localizados no mesmo cromossomo, muito próximos entre si", "IsCorrect": false },
+      { "Text": "Estão localizados em cromossomos diferentes e segregam independentemente", "IsCorrect": true },
+      { "Text": "São sempre dominantes um sobre o outro", "IsCorrect": false },
+      { "Text": "Estão localizados nos cromossomos sexuais", "IsCorrect": false }
+    ]
+  },
+  {
+    "Subject": "Biologia",
+    "Topic": "Mendel",
+    "Type": "MultipleChoice",
+    "Statement": "Em um cruzamento diíbrido entre indivíduos heterozigotos para ambas as características (AaBb × AaBb), qual é a proporção fenotípica esperada na geração F2?",
+    "Explanation": "No cruzamento diíbrido AaBb × AaBb, a proporção fenotípica esperada na F2 é 9:3:3:1, onde 9/16 apresentam ambos os fenótipos dominantes, 3/16 apresentam o primeiro dominante e o segundo recessivo, 3/16 apresentam o primeiro recessivo e o segundo dominante, e 1/16 apresenta ambos os fenótipos recessivos.",
+    "Difficulty": 3,
+    "Tags": ["EM", "Biologia", "Lote2", "Mendel"],
+    "Choices": [
+      { "Text": "3:1", "IsCorrect": false },
+      { "Text": "1:2:1", "IsCorrect": false },
+      { "Text": "9:3:3:1", "IsCorrect": true },
+      { "Text": "1:1:1:1", "IsCorrect": false }
+    ]
+  },
+  {
+    "Subject": "Biologia",
+    "Topic": "Mendel",
+    "Type": "MultipleChoice",
+    "Statement": "O cruzamento-teste (testcross) é utilizado para determinar o genótipo de um indivíduo com fenótipo dominante. Esse cruzamento é realizado entre o indivíduo em questão e:",
+    "Explanation": "No cruzamento-teste, o indivíduo de fenótipo dominante (que pode ser homozigoto AA ou heterozigoto Aa) é cruzado com um indivíduo homozigoto recessivo (aa). Se todos os descendentes apresentarem fenótipo dominante, o indivíduo testado é AA. Se aparecerem descendentes com fenótipo recessivo, o indivíduo testado é Aa.",
+    "Difficulty": 3,
+    "Tags": ["EM", "Biologia", "Lote2", "Mendel"],
+    "Choices": [
+      { "Text": "Um indivíduo homozigoto dominante", "IsCorrect": false },
+      { "Text": "Um indivíduo heterozigoto", "IsCorrect": false },
+      { "Text": "Um indivíduo homozigoto recessivo", "IsCorrect": true },
+      { "Text": "Qualquer indivíduo com fenótipo dominante", "IsCorrect": false }
+    ]
+  },
+  {
+    "Subject": "Biologia",
+    "Topic": "Hereditariedade",
+    "Type": "MultipleChoice",
+    "Statement": "O sistema ABO de grupos sanguíneos humanos é um exemplo de qual tipo de herança?",
+    "Explanation": "O sistema ABO é um exemplo de alelos múltiplos (polialelia), pois existem três alelos para o gene: IA, IB e i. Além disso, entre os alelos IA e IB há codominância (ambos se expressam no tipo AB), enquanto ambos são dominantes sobre o alelo i.",
+    "Difficulty": 3,
+    "Tags": ["EM", "Biologia", "Lote2", "Hereditariedade"],
+    "Choices": [
+      { "Text": "Herança ligada ao sexo", "IsCorrect": false },
+      { "Text": "Dominância completa simples", "IsCorrect": false },
+      { "Text": "Alelos múltiplos com codominância", "IsCorrect": true },
+      { "Text": "Herança poligênica", "IsCorrect": false }
+    ]
+  },
+  {
+    "Subject": "Biologia",
+    "Topic": "Hereditariedade",
+    "Type": "MultipleChoice",
+    "Statement": "Uma mulher com tipo sanguíneo A (genótipo IAi) casa-se com um homem de tipo sanguíneo B (genótipo IBi). Quais são os tipos sanguíneos possíveis nos filhos?",
+    "Explanation": "Do cruzamento IAi × IBi, os genótipos possíveis são: IAIB (tipo AB), IAi (tipo A), IBi (tipo B) e ii (tipo O). Portanto, os filhos podem apresentar qualquer um dos quatro tipos sanguíneos do sistema ABO.",
+    "Difficulty": 3,
+    "Tags": ["EM", "Biologia", "Lote2", "Hereditariedade"],
+    "Choices": [
+      { "Text": "Apenas A e B", "IsCorrect": false },
+      { "Text": "Apenas A, B e AB", "IsCorrect": false },
+      { "Text": "A, B, AB e O", "IsCorrect": true },
+      { "Text": "Apenas AB e O", "IsCorrect": false }
+    ]
+  },
+  {
+    "Subject": "Biologia",
+    "Topic": "Hereditariedade",
+    "Type": "MultipleChoice",
+    "Statement": "A hemofilia é uma doença genética ligada ao cromossomo X. Se uma mulher portadora (XHXh) casa-se com um homem normal (XHY), qual a probabilidade de um filho homem ser hemofílico?",
+    "Explanation": "Na herança ligada ao sexo, os filhos homens herdam o cromossomo X da mãe e o Y do pai. A mulher portadora (XHXh) pode passar o alelo XH ou Xh para seus filhos. Assim, há 50% de chance de um filho homem receber o Xh e ser hemofílico (XhY), e 50% de receber o XH e ser normal (XHY).",
+    "Difficulty": 3,
+    "Tags": ["EM", "Biologia", "Lote2", "Hereditariedade"],
+    "Choices": [
+      { "Text": "0%", "IsCorrect": false },
+      { "Text": "25%", "IsCorrect": false },
+      { "Text": "50%", "IsCorrect": true },
+      { "Text": "100%", "IsCorrect": false }
+    ]
+  },
+  {
+    "Subject": "Biologia",
+    "Topic": "Hereditariedade",
+    "Type": "MultipleChoice",
+    "Statement": "O daltonismo é uma condição recessiva ligada ao cromossomo X. Uma mulher de visão normal, cujo pai era daltônico, casa-se com um homem de visão normal. Qual é o genótipo da mulher?",
+    "Explanation": "Como o pai era daltônico (XdY), ele obrigatoriamente transmitiu o alelo Xd para a filha. Como a mulher tem visão normal, ela deve ter recebido um alelo XD da mãe. Portanto, seu genótipo é XDXd, sendo portadora do gene para daltonismo.",
+    "Difficulty": 4,
+    "Tags": ["EM", "Biologia", "Lote2", "Hereditariedade"],
+    "Choices": [
+      { "Text": "XDXD (homozigota dominante)", "IsCorrect": false },
+      { "Text": "XDXd (heterozigota portadora)", "IsCorrect": true },
+      { "Text": "XdXd (homozigota recessiva)", "IsCorrect": false },
+      { "Text": "Não é possível determinar com essas informações", "IsCorrect": false }
+    ]
+  },
+  {
+    "Subject": "Biologia",
+    "Topic": "Hereditariedade",
+    "Type": "MultipleChoice",
+    "Statement": "O fator Rh do sangue humano é determinado por um gene autossômico com dominância completa, onde Rh+ (D) é dominante sobre Rh- (d). Uma mulher Rh- (dd) que está grávida de um feto Rh+ pode desenvolver uma condição conhecida como:",
+    "Explanation": "A eritroblastose fetal (ou doença hemolítica do recém-nascido) ocorre quando uma mãe Rh- é sensibilizada por glóbulos vermelhos Rh+ do feto, produzindo anticorpos anti-Rh. Geralmente afeta mais gravemente a segunda gestação de feto Rh+, pois na primeira gestação ocorre a sensibilização. A prevenção é feita com injeção de imunoglobulina anti-D.",
+    "Difficulty": 4,
+    "Tags": ["EM", "Biologia", "Lote2", "Hereditariedade"],
+    "Choices": [
+      { "Text": "Síndrome de Down", "IsCorrect": false },
+      { "Text": "Anemia falciforme", "IsCorrect": false },
+      { "Text": "Eritroblastose fetal (doença hemolítica do recém-nascido)", "IsCorrect": true },
+      { "Text": "Hemofilia neonatal", "IsCorrect": false }
+    ]
+  },
+  {
+    "Subject": "Biologia",
+    "Topic": "Hereditariedade",
+    "Type": "MultipleChoice",
+    "Statement": "Em uma espécie animal, a cor da pelagem é determinada por codominância: o alelo CV produz pelagem vermelha, o alelo CB produz pelagem branca e o genótipo CVCB produz pelagem ruã (mistura de pelos vermelhos e brancos). Se cruzarmos dois indivíduos de pelagem ruã (CVCB × CVCB), qual a proporção fenotípica esperada?",
+    "Explanation": "Na codominância, ambos os alelos se expressam simultaneamente no heterozigoto. No cruzamento CVCB × CVCB, os genótipos esperados são 1 CVCV (vermelho) : 2 CVCB (ruã) : 1 CBCB (branco). Como na codominância o heterozigoto apresenta um fenótipo distinto, a proporção fenotípica é 1:2:1.",
+    "Difficulty": 5,
+    "Tags": ["EM", "Biologia", "Lote2", "Hereditariedade"],
+    "Choices": [
+      { "Text": "3 vermelhos : 1 branco", "IsCorrect": false },
+      { "Text": "1 vermelho : 1 ruã : 1 branco", "IsCorrect": false },
+      { "Text": "Todos ruã", "IsCorrect": false },
+      { "Text": "1 vermelho : 2 ruã : 1 branco", "IsCorrect": true }
+    ]
+  }
+]

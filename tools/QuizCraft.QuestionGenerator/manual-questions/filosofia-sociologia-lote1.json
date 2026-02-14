@@ -1,0 +1,377 @@
+[
+  {
+    "Subject": "Filosofia e Sociologia",
+    "Topic": "Ética",
+    "Type": "MultipleChoice",
+    "Statement": "A ética é um ramo da filosofia que estuda os valores e princípios que orientam o comportamento humano. Qual alternativa melhor define o conceito de ética?",
+    "Explanation": "A ética é a área da filosofia que investiga os fundamentos racionais dos valores morais, buscando compreender o que é o bem, o justo e o correto na conduta humana.",
+    "Difficulty": 1,
+    "Tags": ["EM", "Filosofia e Sociologia", "Lote1", "Ética"],
+    "Choices": [
+      {"Text": "Conjunto de leis criadas pelo Estado para punir criminosos", "IsCorrect": false},
+      {"Text": "Estudo filosófico dos valores e princípios que orientam a conduta humana", "IsCorrect": true},
+      {"Text": "Conjunto de regras religiosas que devem ser seguidas por todos", "IsCorrect": false},
+      {"Text": "Ciência que estuda a estrutura política das sociedades antigas", "IsCorrect": false}
+    ]
+  },
+  {
+    "Subject": "Filosofia e Sociologia",
+    "Topic": "Ética",
+    "Type": "MultipleChoice",
+    "Statement": "Para o filósofo Immanuel Kant, a ação moral deve ser guiada pelo dever e pela razão, independentemente das consequências. Esse princípio é conhecido como:",
+    "Explanation": "Kant formulou o imperativo categórico, segundo o qual devemos agir apenas segundo uma máxima que possamos querer que se torne uma lei universal. A moralidade está no cumprimento do dever por dever.",
+    "Difficulty": 3,
+    "Tags": ["EM", "Filosofia e Sociologia", "Lote1", "Ética"],
+    "Choices": [
+      {"Text": "Utilitarismo", "IsCorrect": false},
+      {"Text": "Relativismo moral", "IsCorrect": false},
+      {"Text": "Imperativo categórico", "IsCorrect": true},
+      {"Text": "Hedonismo ético", "IsCorrect": false}
+    ]
+  },
+  {
+    "Subject": "Filosofia e Sociologia",
+    "Topic": "Ética",
+    "Type": "MultipleChoice",
+    "Statement": "O utilitarismo é uma corrente ética desenvolvida por pensadores como Jeremy Bentham e John Stuart Mill. Segundo essa teoria, uma ação é considerada moralmente correta quando:",
+    "Explanation": "O utilitarismo defende que a melhor ação é aquela que produz a maior quantidade de bem-estar ou felicidade para o maior número de pessoas, avaliando as consequências das ações.",
+    "Difficulty": 3,
+    "Tags": ["EM", "Filosofia e Sociologia", "Lote1", "Ética"],
+    "Choices": [
+      {"Text": "Segue rigorosamente as tradições culturais de uma sociedade", "IsCorrect": false},
+      {"Text": "É realizada por dever, sem considerar as consequências", "IsCorrect": false},
+      {"Text": "Está de acordo com as leis vigentes no país", "IsCorrect": false},
+      {"Text": "Produz a maior felicidade possível para o maior número de pessoas", "IsCorrect": true}
+    ]
+  },
+  {
+    "Subject": "Filosofia e Sociologia",
+    "Topic": "Ética",
+    "Type": "MultipleChoice",
+    "Statement": "Aristóteles, na obra 'Ética a Nicômaco', propõe que a virtude consiste em encontrar o equilíbrio entre dois extremos. Esse conceito é chamado de:",
+    "Explanation": "A justa medida (ou meio-termo) aristotélica propõe que a virtude está no equilíbrio entre o excesso e a falta. Por exemplo, a coragem é o meio-termo entre a covardia e a temeridade.",
+    "Difficulty": 4,
+    "Tags": ["EM", "Filosofia e Sociologia", "Lote1", "Ética"],
+    "Choices": [
+      {"Text": "Justa medida", "IsCorrect": true},
+      {"Text": "Imperativo hipotético", "IsCorrect": false},
+      {"Text": "Dialética transcendental", "IsCorrect": false},
+      {"Text": "Contrato social", "IsCorrect": false}
+    ]
+  },
+  {
+    "Subject": "Filosofia e Sociologia",
+    "Topic": "Ética",
+    "Type": "MultipleChoice",
+    "Statement": "Na filosofia contemporânea, a bioética é um campo que discute questões morais relacionadas à vida e à saúde. Qual das alternativas apresenta um tema central da bioética?",
+    "Explanation": "A bioética lida com dilemas morais envolvendo ciências da vida e da saúde, como eutanásia, clonagem, pesquisas com células-tronco, transplante de órgãos e limites da manipulação genética.",
+    "Difficulty": 2,
+    "Tags": ["EM", "Filosofia e Sociologia", "Lote1", "Ética"],
+    "Choices": [
+      {"Text": "A estrutura do sistema eleitoral brasileiro", "IsCorrect": false},
+      {"Text": "Os limites éticos da manipulação genética e da eutanásia", "IsCorrect": true},
+      {"Text": "A origem do universo segundo a cosmologia moderna", "IsCorrect": false},
+      {"Text": "A análise gramatical das línguas indígenas brasileiras", "IsCorrect": false}
+    ]
+  },
+  {
+    "Subject": "Filosofia e Sociologia",
+    "Topic": "Ética",
+    "Type": "MultipleChoice",
+    "Statement": "O filósofo Hans Jonas propôs o 'princípio responsabilidade', segundo o qual a ética contemporânea deve considerar as consequências de nossas ações para as gerações futuras. Essa reflexão está diretamente ligada a qual debate atual?",
+    "Explanation": "Hans Jonas argumentou que a tecnologia moderna ampliou o poder humano de transformar a natureza, exigindo uma nova ética que considere a preservação ambiental e a responsabilidade com as futuras gerações.",
+    "Difficulty": 5,
+    "Tags": ["EM", "Filosofia e Sociologia", "Lote1", "Ética"],
+    "Choices": [
+      {"Text": "A disputa entre empirismo e racionalismo na teoria do conhecimento", "IsCorrect": false},
+      {"Text": "A relação entre Estado e religião nas sociedades laicas", "IsCorrect": false},
+      {"Text": "A crise ambiental e a responsabilidade ética com as futuras gerações", "IsCorrect": true},
+      {"Text": "A origem da desigualdade social segundo Jean-Jacques Rousseau", "IsCorrect": false}
+    ]
+  },
+  {
+    "Subject": "Filosofia e Sociologia",
+    "Topic": "Moral",
+    "Type": "MultipleChoice",
+    "Statement": "A moral refere-se ao conjunto de costumes, regras e normas de conduta de uma sociedade. Qual é a principal diferença entre moral e ética?",
+    "Explanation": "Enquanto a moral diz respeito às normas e costumes praticados em uma sociedade específica, a ética é a reflexão filosófica sobre essas normas, analisando seus fundamentos racionais.",
+    "Difficulty": 1,
+    "Tags": ["EM", "Filosofia e Sociologia", "Lote1", "Moral"],
+    "Choices": [
+      {"Text": "A moral é universal e a ética é individual", "IsCorrect": false},
+      {"Text": "A moral se refere às normas praticadas em uma sociedade, enquanto a ética é a reflexão filosófica sobre essas normas", "IsCorrect": true},
+      {"Text": "A ética é mais antiga que a moral e surgiu na Idade Média", "IsCorrect": false},
+      {"Text": "Não existe diferença, pois moral e ética são sinônimos perfeitos", "IsCorrect": false}
+    ]
+  },
+  {
+    "Subject": "Filosofia e Sociologia",
+    "Topic": "Moral",
+    "Type": "MultipleChoice",
+    "Statement": "O relativismo moral é a posição filosófica que defende que:",
+    "Explanation": "O relativismo moral sustenta que os valores morais não são absolutos, mas variam conforme a cultura, o período histórico e o contexto social, não havendo um padrão moral universal válido para todos os povos.",
+    "Difficulty": 2,
+    "Tags": ["EM", "Filosofia e Sociologia", "Lote1", "Moral"],
+    "Choices": [
+      {"Text": "Existe uma única moral válida para todas as sociedades em todos os tempos", "IsCorrect": false},
+      {"Text": "A moral é determinada exclusivamente pelas leis do Estado", "IsCorrect": false},
+      {"Text": "Os valores morais variam de acordo com a cultura e o contexto histórico", "IsCorrect": true},
+      {"Text": "A moralidade depende apenas da vontade individual de cada pessoa", "IsCorrect": false}
+    ]
+  },
+  {
+    "Subject": "Filosofia e Sociologia",
+    "Topic": "Moral",
+    "Type": "MultipleChoice",
+    "Statement": "Émile Durkheim, um dos fundadores da sociologia, considerava a moral como um fato social. Para ele, as regras morais são:",
+    "Explanation": "Durkheim entendia que as normas morais são fatos sociais, ou seja, são exteriores ao indivíduo, exercem coerção sobre ele e são compartilhadas coletivamente, funcionando como elemento de coesão social.",
+    "Difficulty": 3,
+    "Tags": ["EM", "Filosofia e Sociologia", "Lote1", "Moral"],
+    "Choices": [
+      {"Text": "Criações individuais que cada pessoa define para si mesma", "IsCorrect": false},
+      {"Text": "Normas coletivas exteriores ao indivíduo que exercem coerção social", "IsCorrect": true},
+      {"Text": "Resultado exclusivo das crenças religiosas de uma sociedade", "IsCorrect": false},
+      {"Text": "Instintos naturais que todo ser humano possui ao nascer", "IsCorrect": false}
+    ]
+  },
+  {
+    "Subject": "Filosofia e Sociologia",
+    "Topic": "Moral",
+    "Type": "MultipleChoice",
+    "Statement": "Friedrich Nietzsche, em sua obra 'Genealogia da Moral', faz uma crítica profunda aos valores morais ocidentais. Ele propõe que a moral tradicional é resultado de:",
+    "Explanation": "Nietzsche argumentou que a moral cristã ocidental é uma 'moral de rebanho', nascida do ressentimento dos fracos contra os fortes, invertendo os valores aristocráticos originais e promovendo a submissão como virtude.",
+    "Difficulty": 4,
+    "Tags": ["EM", "Filosofia e Sociologia", "Lote1", "Moral"],
+    "Choices": [
+      {"Text": "Um acordo racional entre todos os membros da sociedade", "IsCorrect": false},
+      {"Text": "Uma evolução natural e progressiva da consciência humana", "IsCorrect": false},
+      {"Text": "Uma imposição direta dos governantes sobre o povo", "IsCorrect": false},
+      {"Text": "Um ressentimento dos fracos que inverteu os valores de força e nobreza", "IsCorrect": true}
+    ]
+  },
+  {
+    "Subject": "Filosofia e Sociologia",
+    "Topic": "Moral",
+    "Type": "MultipleChoice",
+    "Statement": "A expressão 'consciência moral' se refere à capacidade humana de:",
+    "Explanation": "A consciência moral é a faculdade que permite ao ser humano avaliar suas próprias ações e as dos outros, distinguindo entre o que considera certo e errado com base em valores internalizados.",
+    "Difficulty": 1,
+    "Tags": ["EM", "Filosofia e Sociologia", "Lote1", "Moral"],
+    "Choices": [
+      {"Text": "Memorizar todas as leis de um país", "IsCorrect": false},
+      {"Text": "Julgar e avaliar ações como certas ou erradas com base em valores", "IsCorrect": true},
+      {"Text": "Seguir ordens de autoridades sem questionamento", "IsCorrect": false},
+      {"Text": "Calcular as vantagens econômicas de uma decisão", "IsCorrect": false}
+    ]
+  },
+  {
+    "Subject": "Filosofia e Sociologia",
+    "Topic": "Moral",
+    "Type": "MultipleChoice",
+    "Statement": "O dilema do bonde (trolley problem) é um experimento mental muito utilizado em filosofia moral. Ele questiona fundamentalmente:",
+    "Explanation": "O dilema do bonde coloca em confronto duas perspectivas éticas: a consequencialista (salvar o maior número de vidas) e a deontológica (não usar uma pessoa como meio), evidenciando os conflitos entre diferentes sistemas morais.",
+    "Difficulty": 3,
+    "Tags": ["EM", "Filosofia e Sociologia", "Lote1", "Moral"],
+    "Choices": [
+      {"Text": "Se é moralmente aceitável sacrificar uma vida para salvar várias outras", "IsCorrect": true},
+      {"Text": "Se os transportes públicos devem ser gratuitos para todos", "IsCorrect": false},
+      {"Text": "Se as máquinas podem substituir os seres humanos no trabalho", "IsCorrect": false},
+      {"Text": "Se a tecnologia é sempre benéfica para a sociedade", "IsCorrect": false}
+    ]
+  },
+  {
+    "Subject": "Filosofia e Sociologia",
+    "Topic": "Cidadania",
+    "Type": "MultipleChoice",
+    "Statement": "Na Grécia Antiga, o conceito de cidadania estava restrito a um grupo específico da população. Quem era considerado cidadão na pólis ateniense?",
+    "Explanation": "Na Atenas antiga, apenas homens livres, nascidos de pais atenienses e maiores de idade eram considerados cidadãos. Mulheres, escravos e estrangeiros (metecos) eram excluídos da cidadania e da participação política.",
+    "Difficulty": 2,
+    "Tags": ["EM", "Filosofia e Sociologia", "Lote1", "Cidadania"],
+    "Choices": [
+      {"Text": "Todos os moradores da cidade, incluindo escravos e estrangeiros", "IsCorrect": false},
+      {"Text": "Apenas os sacerdotes e líderes religiosos", "IsCorrect": false},
+      {"Text": "Homens livres, filhos de pais atenienses e maiores de idade", "IsCorrect": true},
+      {"Text": "Qualquer pessoa que pagasse impostos à cidade", "IsCorrect": false}
+    ]
+  },
+  {
+    "Subject": "Filosofia e Sociologia",
+    "Topic": "Cidadania",
+    "Type": "MultipleChoice",
+    "Statement": "No Brasil, a Constituição Federal de 1988 é conhecida como 'Constituição Cidadã'. Esse nome se deve ao fato de que ela:",
+    "Explanation": "A Constituição de 1988 recebeu o apelido de 'Constituição Cidadã' porque ampliou significativamente os direitos e garantias fundamentais dos brasileiros, após o período da ditadura militar, fortalecendo a democracia e a participação popular.",
+    "Difficulty": 2,
+    "Tags": ["EM", "Filosofia e Sociologia", "Lote1", "Cidadania"],
+    "Choices": [
+      {"Text": "Foi a primeira constituição escrita no Brasil", "IsCorrect": false},
+      {"Text": "Ampliou os direitos e garantias fundamentais dos cidadãos brasileiros", "IsCorrect": true},
+      {"Text": "Eliminou completamente a desigualdade social no país", "IsCorrect": false},
+      {"Text": "Proibiu a existência de partidos políticos de oposição", "IsCorrect": false}
+    ]
+  },
+  {
+    "Subject": "Filosofia e Sociologia",
+    "Topic": "Cidadania",
+    "Type": "MultipleChoice",
+    "Statement": "O sociólogo britânico T. H. Marshall dividiu a cidadania em três dimensões que se desenvolveram historicamente. Quais são essas dimensões?",
+    "Explanation": "T. H. Marshall propôs que a cidadania se desenvolveu em três etapas: direitos civis (liberdades individuais, século XVIII), direitos políticos (participação no poder político, século XIX) e direitos sociais (bem-estar econômico e social, século XX).",
+    "Difficulty": 4,
+    "Tags": ["EM", "Filosofia e Sociologia", "Lote1", "Cidadania"],
+    "Choices": [
+      {"Text": "Direitos naturais, direitos divinos e direitos consuetudinários", "IsCorrect": false},
+      {"Text": "Direitos civis, direitos políticos e direitos sociais", "IsCorrect": true},
+      {"Text": "Direitos econômicos, direitos ambientais e direitos culturais", "IsCorrect": false},
+      {"Text": "Direitos individuais, direitos familiares e direitos empresariais", "IsCorrect": false}
+    ]
+  },
+  {
+    "Subject": "Filosofia e Sociologia",
+    "Topic": "Cidadania",
+    "Type": "MultipleChoice",
+    "Statement": "A participação cidadã pode ocorrer de diversas formas em uma democracia. Qual das alternativas abaixo representa um exemplo de participação cidadã direta?",
+    "Explanation": "O plebiscito é um mecanismo de democracia direta previsto na Constituição brasileira, no qual os cidadãos são consultados para decidir sobre uma questão política relevante antes da elaboração de uma lei.",
+    "Difficulty": 1,
+    "Tags": ["EM", "Filosofia e Sociologia", "Lote1", "Cidadania"],
+    "Choices": [
+      {"Text": "A nomeação de ministros pelo presidente da República", "IsCorrect": false},
+      {"Text": "A decisão de um juiz em um processo judicial", "IsCorrect": false},
+      {"Text": "A aprovação de um projeto de lei por senadores", "IsCorrect": false},
+      {"Text": "A votação popular em um plebiscito", "IsCorrect": true}
+    ]
+  },
+  {
+    "Subject": "Filosofia e Sociologia",
+    "Topic": "Cidadania",
+    "Type": "MultipleChoice",
+    "Statement": "Os movimentos sociais desempenham um papel fundamental na ampliação da cidadania. No Brasil, o Movimento dos Trabalhadores Rurais Sem Terra (MST) luta principalmente por:",
+    "Explanation": "O MST é um dos maiores movimentos sociais da América Latina e tem como principal bandeira a reforma agrária, buscando a redistribuição de terras improdutivas para famílias de trabalhadores rurais sem terra.",
+    "Difficulty": 2,
+    "Tags": ["EM", "Filosofia e Sociologia", "Lote1", "Cidadania"],
+    "Choices": [
+      {"Text": "A privatização de todas as empresas estatais", "IsCorrect": false},
+      {"Text": "A reforma agrária e a redistribuição de terras", "IsCorrect": true},
+      {"Text": "A extinção do sistema democrático no Brasil", "IsCorrect": false},
+      {"Text": "A redução dos impostos para grandes proprietários rurais", "IsCorrect": false}
+    ]
+  },
+  {
+    "Subject": "Filosofia e Sociologia",
+    "Topic": "Cidadania",
+    "Type": "MultipleChoice",
+    "Statement": "O conceito de cidadania na modernidade está intrinsecamente ligado à ideia de Estado-nação. Segundo o filósofo Jean-Jacques Rousseau, a legitimidade do Estado se fundamenta em:",
+    "Explanation": "Rousseau, em sua obra 'O Contrato Social', argumenta que a autoridade política legítima se baseia em um pacto entre os cidadãos, que abrem mão de parte de sua liberdade individual em favor da vontade geral e do bem comum.",
+    "Difficulty": 3,
+    "Tags": ["EM", "Filosofia e Sociologia", "Lote1", "Cidadania"],
+    "Choices": [
+      {"Text": "Na força militar e na capacidade de coerção do governante", "IsCorrect": false},
+      {"Text": "Na vontade divina que designa os governantes legítimos", "IsCorrect": false},
+      {"Text": "No contrato social estabelecido pela vontade geral dos cidadãos", "IsCorrect": true},
+      {"Text": "Na tradição hereditária das famílias reais", "IsCorrect": false}
+    ]
+  },
+  {
+    "Subject": "Filosofia e Sociologia",
+    "Topic": "Direitos humanos",
+    "Type": "MultipleChoice",
+    "Statement": "A Declaração Universal dos Direitos Humanos foi proclamada pela Assembleia Geral das Nações Unidas em 1948. Qual foi o principal contexto histórico que motivou sua criação?",
+    "Explanation": "A Declaração Universal dos Direitos Humanos de 1948 foi uma resposta direta às atrocidades cometidas durante a Segunda Guerra Mundial, especialmente o Holocausto, buscando estabelecer um padrão mínimo de proteção à dignidade humana.",
+    "Difficulty": 1,
+    "Tags": ["EM", "Filosofia e Sociologia", "Lote1", "Direitos humanos"],
+    "Choices": [
+      {"Text": "As atrocidades da Segunda Guerra Mundial e do Holocausto", "IsCorrect": true},
+      {"Text": "A Revolução Industrial e a exploração dos trabalhadores", "IsCorrect": false},
+      {"Text": "A Guerra Fria entre Estados Unidos e União Soviética", "IsCorrect": false},
+      {"Text": "A independência das colônias africanas nos anos 1960", "IsCorrect": false}
+    ]
+  },
+  {
+    "Subject": "Filosofia e Sociologia",
+    "Topic": "Direitos humanos",
+    "Type": "MultipleChoice",
+    "Statement": "Os direitos humanos são frequentemente classificados em gerações ou dimensões. Os direitos de primeira geração referem-se a:",
+    "Explanation": "Os direitos de primeira geração surgiram com as revoluções liberais dos séculos XVII e XVIII e compreendem os direitos civis e políticos, como liberdade de expressão, de religião, de ir e vir, e o direito à vida.",
+    "Difficulty": 3,
+    "Tags": ["EM", "Filosofia e Sociologia", "Lote1", "Direitos humanos"],
+    "Choices": [
+      {"Text": "Direitos econômicos e trabalhistas, como salário mínimo e jornada de trabalho", "IsCorrect": false},
+      {"Text": "Direitos coletivos e difusos, como o direito ao meio ambiente saudável", "IsCorrect": false},
+      {"Text": "Direitos civis e políticos, como liberdade de expressão e direito à vida", "IsCorrect": true},
+      {"Text": "Direitos digitais, como privacidade na internet e proteção de dados", "IsCorrect": false}
+    ]
+  },
+  {
+    "Subject": "Filosofia e Sociologia",
+    "Topic": "Direitos humanos",
+    "Type": "MultipleChoice",
+    "Statement": "O Estatuto da Criança e do Adolescente (ECA), criado em 1990, é uma legislação brasileira que se fundamenta na doutrina da proteção integral. Isso significa que:",
+    "Explanation": "O ECA adota a doutrina da proteção integral, reconhecendo crianças e adolescentes como sujeitos de direitos em condição peculiar de desenvolvimento, com prioridade absoluta na garantia de seus direitos fundamentais.",
+    "Difficulty": 3,
+    "Tags": ["EM", "Filosofia e Sociologia", "Lote1", "Direitos humanos"],
+    "Choices": [
+      {"Text": "Apenas os pais são responsáveis pela proteção de seus filhos", "IsCorrect": false},
+      {"Text": "Crianças e adolescentes são reconhecidos como sujeitos de direitos com prioridade absoluta", "IsCorrect": true},
+      {"Text": "O Estado deve internar toda criança que esteja em situação de rua", "IsCorrect": false},
+      {"Text": "Adolescentes devem ser julgados da mesma forma que adultos", "IsCorrect": false}
+    ]
+  },
+  {
+    "Subject": "Filosofia e Sociologia",
+    "Topic": "Direitos humanos",
+    "Type": "MultipleChoice",
+    "Statement": "O filósofo John Locke é considerado um dos precursores da teoria dos direitos naturais. Segundo Locke, quais são os direitos naturais fundamentais do ser humano?",
+    "Explanation": "John Locke argumentou que todos os seres humanos possuem, por natureza, direitos inalienáveis à vida, à liberdade e à propriedade, e que o Estado existe para proteger esses direitos, não para violá-los.",
+    "Difficulty": 3,
+    "Tags": ["EM", "Filosofia e Sociologia", "Lote1", "Direitos humanos"],
+    "Choices": [
+      {"Text": "Educação, saúde e moradia", "IsCorrect": false},
+      {"Text": "Igualdade, fraternidade e solidariedade", "IsCorrect": false},
+      {"Text": "Vida, liberdade e propriedade", "IsCorrect": true},
+      {"Text": "Trabalho, lazer e segurança", "IsCorrect": false}
+    ]
+  },
+  {
+    "Subject": "Filosofia e Sociologia",
+    "Topic": "Direitos humanos",
+    "Type": "MultipleChoice",
+    "Statement": "A filósofa Hannah Arendt, ao refletir sobre os direitos humanos, cunhou a famosa expressão 'o direito a ter direitos'. Com essa expressão, Arendt argumentava que:",
+    "Explanation": "Hannah Arendt observou que refugiados e apátridas, ao perderem sua nacionalidade, perdiam também a proteção de seus direitos. Para ela, o direito fundamental é pertencer a uma comunidade política que garanta os demais direitos.",
+    "Difficulty": 5,
+    "Tags": ["EM", "Filosofia e Sociologia", "Lote1", "Direitos humanos"],
+    "Choices": [
+      {"Text": "Os direitos humanos são garantidos automaticamente pela natureza humana", "IsCorrect": false},
+      {"Text": "O direito mais fundamental é pertencer a uma comunidade política que garanta os demais direitos", "IsCorrect": true},
+      {"Text": "Todos os direitos são concedidos pelo Estado e podem ser revogados a qualquer momento", "IsCorrect": false},
+      {"Text": "Os direitos humanos só existem em sociedades democráticas desenvolvidas", "IsCorrect": false}
+    ]
+  },
+  {
+    "Subject": "Filosofia e Sociologia",
+    "Topic": "Direitos humanos",
+    "Type": "MultipleChoice",
+    "Statement": "No Brasil, a tortura é considerada crime inafiançável e insuscetível de graça ou anistia. Essa proibição está prevista na Constituição Federal de 1988 e reflete qual princípio dos direitos humanos?",
+    "Explanation": "A proibição absoluta da tortura reflete o princípio da dignidade da pessoa humana, que é um dos fundamentos da República Federativa do Brasil e impede qualquer tratamento desumano ou degradante.",
+    "Difficulty": 3,
+    "Tags": ["EM", "Filosofia e Sociologia", "Lote1", "Direitos humanos"],
+    "Choices": [
+      {"Text": "Princípio da legalidade", "IsCorrect": false},
+      {"Text": "Princípio da soberania nacional", "IsCorrect": false},
+      {"Text": "Princípio da separação dos poderes", "IsCorrect": false},
+      {"Text": "Princípio da dignidade da pessoa humana", "IsCorrect": true}
+    ]
+  },
+  {
+    "Subject": "Filosofia e Sociologia",
+    "Topic": "Direitos humanos",
+    "Type": "MultipleChoice",
+    "Statement": "A Lei Maria da Penha (Lei n. 11.340/2006) é uma legislação brasileira que visa proteger as mulheres contra a violência doméstica e familiar. Essa lei representa um avanço na garantia de qual tipo de direito?",
+    "Explanation": "A Lei Maria da Penha é um marco na proteção dos direitos humanos das mulheres no Brasil, criando mecanismos para coibir e prevenir a violência doméstica e familiar, reconhecendo a necessidade de proteção específica diante da desigualdade de gênero.",
+    "Difficulty": 3,
+    "Tags": ["EM", "Filosofia e Sociologia", "Lote1", "Direitos humanos"],
+    "Choices": [
+      {"Text": "Direitos humanos das mulheres e proteção contra a violência de gênero", "IsCorrect": true},
+      {"Text": "Direitos trabalhistas e igualdade salarial entre homens e mulheres", "IsCorrect": false},
+      {"Text": "Direitos políticos e ampliação do voto feminino", "IsCorrect": false},
+      {"Text": "Direitos patrimoniais e divisão igualitária de bens", "IsCorrect": false}
+    ]
+  }
+]

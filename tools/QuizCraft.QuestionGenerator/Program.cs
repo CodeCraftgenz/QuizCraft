@@ -32,9 +32,95 @@ const int DelayMaxMs = 1500;
 // =========================================================================
 
 Console.OutputEncoding = System.Text.Encoding.UTF8;
+
+// =========================================================================
+// Modo de importacao manual: --import-manual
+// Importa os JSONs da pasta manual-questions/ sem precisar da OpenAI
+// =========================================================================
+
+if (args.Contains("--import-manual"))
+{
+    Console.WriteLine("══════════════════════════════════════════════════════════");
+    Console.WriteLine("  QuizCraft - Importacao Manual de Questoes              ");
+    Console.WriteLine("══════════════════════════════════════════════════════════");
+    Console.WriteLine();
+
+    var dbPathManual = DatabaseInitializer.GetDatabasePath();
+    Console.WriteLine($"[INFO] Banco: {dbPathManual}");
+
+    var optionsManual = new DbContextOptionsBuilder<QuizCraftDbContext>();
+    optionsManual.UseSqlite($"Data Source={dbPathManual}");
+
+    if (!File.Exists(dbPathManual))
+    {
+        using var initCtx = new QuizCraftDbContext(optionsManual.Options);
+        await initCtx.Database.EnsureCreatedAsync();
+        Console.WriteLine("[OK] Banco criado.");
+    }
+
+    // Buscar JSONs na pasta manual-questions ao lado do executavel
+    var manualDir = Path.Combine(AppContext.BaseDirectory, "manual-questions");
+    // Fallback: pasta no diretorio do projeto (quando roda via dotnet run)
+    if (!Directory.Exists(manualDir))
+        manualDir = Path.Combine(Directory.GetCurrentDirectory(), "tools", "QuizCraft.QuestionGenerator", "manual-questions");
+    if (!Directory.Exists(manualDir))
+        manualDir = Path.Combine(Directory.GetCurrentDirectory(), "manual-questions");
+
+    if (!Directory.Exists(manualDir))
+    {
+        Console.ForegroundColor = ConsoleColor.Red;
+        Console.WriteLine($"[ERRO] Pasta manual-questions nao encontrada!");
+        Console.ResetColor();
+        return 1;
+    }
+
+    var jsonFiles = Directory.GetFiles(manualDir, "*.json");
+    Console.WriteLine($"[INFO] Encontrados {jsonFiles.Length} arquivo(s) JSON em {manualDir}");
+    Console.WriteLine();
+
+    int totalImportadas = 0;
+    foreach (var file in jsonFiles)
+    {
+        var fileName = Path.GetFileName(file);
+        Console.Write($"  -> Importando {fileName}...");
+
+        try
+        {
+            var json = await File.ReadAllTextAsync(file);
+            using var ctx = new QuizCraftDbContext(optionsManual.Options);
+            var importService = new ImportExportService(ctx);
+            var qtd = await importService.ImportQuestionsJsonAsync(json);
+
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.WriteLine($" OK ({qtd} questoes)");
+            Console.ResetColor();
+            totalImportadas += qtd;
+        }
+        catch (Exception ex)
+        {
+            Console.ForegroundColor = ConsoleColor.Red;
+            Console.WriteLine($" ERRO: {ex.Message}");
+            Console.ResetColor();
+        }
+    }
+
+    Console.WriteLine();
+    Console.ForegroundColor = ConsoleColor.Green;
+    Console.WriteLine($"[OK] Total importadas: {totalImportadas} questoes");
+    Console.ResetColor();
+    Console.WriteLine();
+    Console.WriteLine("Pressione qualquer tecla para sair...");
+    Console.ReadKey();
+    return 0;
+}
+
+// =========================================================================
+// Modo normal: Geracao via OpenAI
+// =========================================================================
+
 Console.WriteLine("══════════════════════════════════════════════════════════");
 Console.WriteLine("  QuizCraft - Gerador de Questoes via OpenAI            ");
-Console.WriteLine("  10 materias x 4 lotes x 25 questoes = 1.000 total    ");
+Console.WriteLine("  10 materias x 4 lotes x ~25 questoes = ~1.000 total  ");
 Console.WriteLine("══════════════════════════════════════════════════════════");
 Console.WriteLine();
 

@@ -1,0 +1,377 @@
+[
+  {
+    "Subject": "Química",
+    "Topic": "Estrutura atômica",
+    "Type": "MultipleChoice",
+    "Statement": "Qual cientista propôs o modelo atômico conhecido como 'pudim de passas', no qual os elétrons estariam incrustados em uma esfera de carga positiva?",
+    "Explanation": "J.J. Thomson propôs, em 1904, o modelo atômico em que o átomo seria uma esfera de carga positiva com elétrons distribuídos nela, semelhante a passas em um pudim.",
+    "Difficulty": 1,
+    "Tags": ["EM", "Química", "Lote1", "Estrutura atômica"],
+    "Choices": [
+      {"Text": "Dalton", "IsCorrect": false},
+      {"Text": "Rutherford", "IsCorrect": false},
+      {"Text": "Thomson", "IsCorrect": true},
+      {"Text": "Bohr", "IsCorrect": false}
+    ]
+  },
+  {
+    "Subject": "Química",
+    "Topic": "Estrutura atômica",
+    "Type": "MultipleChoice",
+    "Statement": "O número atômico (Z) de um elemento químico representa:",
+    "Explanation": "O número atômico (Z) indica a quantidade de prótons no núcleo do átomo. É ele que define a identidade do elemento químico.",
+    "Difficulty": 1,
+    "Tags": ["EM", "Química", "Lote1", "Estrutura atômica"],
+    "Choices": [
+      {"Text": "O número de nêutrons no núcleo", "IsCorrect": false},
+      {"Text": "A soma de prótons e nêutrons", "IsCorrect": false},
+      {"Text": "O número de elétrons na eletrosfera apenas", "IsCorrect": false},
+      {"Text": "O número de prótons no núcleo", "IsCorrect": true}
+    ]
+  },
+  {
+    "Subject": "Química",
+    "Topic": "Estrutura atômica",
+    "Type": "MultipleChoice",
+    "Statement": "Dois átomos que possuem o mesmo número atômico, mas diferentes números de massa, são chamados de:",
+    "Explanation": "Isótopos são átomos do mesmo elemento químico (mesmo número atômico) que diferem no número de nêutrons, resultando em diferentes números de massa.",
+    "Difficulty": 2,
+    "Tags": ["EM", "Química", "Lote1", "Estrutura atômica"],
+    "Choices": [
+      {"Text": "Isótopos", "IsCorrect": true},
+      {"Text": "Isóbaros", "IsCorrect": false},
+      {"Text": "Isótonos", "IsCorrect": false},
+      {"Text": "Isoeletrônicos", "IsCorrect": false}
+    ]
+  },
+  {
+    "Subject": "Química",
+    "Topic": "Estrutura atômica",
+    "Type": "MultipleChoice",
+    "Statement": "No modelo atômico de Bohr, os elétrons se movem em órbitas circulares ao redor do núcleo. Quando um elétron absorve energia, ele:",
+    "Explanation": "Segundo o modelo de Bohr, ao absorver energia (um quantum), o elétron salta para um nível de energia mais externo (mais afastado do núcleo). Ao retornar, emite energia na forma de luz.",
+    "Difficulty": 3,
+    "Tags": ["EM", "Química", "Lote1", "Estrutura atômica"],
+    "Choices": [
+      {"Text": "Permanece no mesmo nível de energia", "IsCorrect": false},
+      {"Text": "Salta para um nível de energia mais interno", "IsCorrect": false},
+      {"Text": "Salta para um nível de energia mais externo", "IsCorrect": true},
+      {"Text": "É ejetado do átomo imediatamente", "IsCorrect": false}
+    ]
+  },
+  {
+    "Subject": "Química",
+    "Topic": "Estrutura atômica",
+    "Type": "MultipleChoice",
+    "Statement": "A distribuição eletrônica do átomo de ferro (Fe, Z=26) no estado fundamental, segundo o diagrama de Linus Pauling, termina em:",
+    "Explanation": "O ferro (Z=26) tem distribuição eletrônica: 1s² 2s² 2p⁶ 3s² 3p⁶ 4s² 3d⁶. O último subnível a ser preenchido é o 3d⁶, seguindo a ordem energética do diagrama de Pauling.",
+    "Difficulty": 4,
+    "Tags": ["EM", "Química", "Lote1", "Estrutura atômica"],
+    "Choices": [
+      {"Text": "4s²", "IsCorrect": false},
+      {"Text": "3d⁸", "IsCorrect": false},
+      {"Text": "4p²", "IsCorrect": false},
+      {"Text": "3d⁶", "IsCorrect": true}
+    ]
+  },
+  {
+    "Subject": "Química",
+    "Topic": "Estrutura atômica",
+    "Type": "MultipleChoice",
+    "Statement": "Um átomo possui 20 prótons, 21 nêutrons e 18 elétrons. Qual é o número de massa e a carga desse íon?",
+    "Explanation": "O número de massa (A) é a soma de prótons e nêutrons: 20 + 21 = 41. Como há 20 prótons (+) e 18 elétrons (-), a carga líquida é +2. Trata-se do cátion Ca²⁺.",
+    "Difficulty": 5,
+    "Tags": ["EM", "Química", "Lote1", "Estrutura atômica"],
+    "Choices": [
+      {"Text": "A = 41 e carga 2-", "IsCorrect": false},
+      {"Text": "A = 38 e carga 2+", "IsCorrect": false},
+      {"Text": "A = 41 e carga 2+", "IsCorrect": true},
+      {"Text": "A = 39 e carga neutra", "IsCorrect": false}
+    ]
+  },
+  {
+    "Subject": "Química",
+    "Topic": "Tabela periódica",
+    "Type": "MultipleChoice",
+    "Statement": "Os elementos químicos da família dos gases nobres estão localizados na coluna:",
+    "Explanation": "Os gases nobres (He, Ne, Ar, Kr, Xe, Rn) pertencem à família 18 (ou grupo 8A) da tabela periódica. São caracterizados pela estabilidade de suas camadas de valência completas.",
+    "Difficulty": 1,
+    "Tags": ["EM", "Química", "Lote1", "Tabela periódica"],
+    "Choices": [
+      {"Text": "1 (1A)", "IsCorrect": false},
+      {"Text": "17 (7A)", "IsCorrect": false},
+      {"Text": "18 (8A)", "IsCorrect": true},
+      {"Text": "2 (2A)", "IsCorrect": false}
+    ]
+  },
+  {
+    "Subject": "Química",
+    "Topic": "Tabela periódica",
+    "Type": "MultipleChoice",
+    "Statement": "Na tabela periódica, o período em que um elemento se encontra indica:",
+    "Explanation": "O número do período na tabela periódica corresponde ao número de camadas eletrônicas (níveis de energia) que o átomo do elemento possui no estado fundamental.",
+    "Difficulty": 1,
+    "Tags": ["EM", "Química", "Lote1", "Tabela periódica"],
+    "Choices": [
+      {"Text": "O número de elétrons de valência", "IsCorrect": false},
+      {"Text": "O número de camadas eletrônicas do átomo", "IsCorrect": true},
+      {"Text": "O número de prótons do átomo", "IsCorrect": false},
+      {"Text": "A massa atômica do elemento", "IsCorrect": false}
+    ]
+  },
+  {
+    "Subject": "Química",
+    "Topic": "Tabela periódica",
+    "Type": "MultipleChoice",
+    "Statement": "Em um mesmo período da tabela periódica, da esquerda para a direita, o raio atômico dos elementos tende a:",
+    "Explanation": "Em um mesmo período, da esquerda para a direita, o número de prótons aumenta enquanto os elétrons são adicionados na mesma camada. A maior carga nuclear efetiva atrai os elétrons com mais força, diminuindo o raio atômico.",
+    "Difficulty": 3,
+    "Tags": ["EM", "Química", "Lote1", "Tabela periódica"],
+    "Choices": [
+      {"Text": "Aumentar progressivamente", "IsCorrect": false},
+      {"Text": "Diminuir progressivamente", "IsCorrect": true},
+      {"Text": "Permanecer constante", "IsCorrect": false},
+      {"Text": "Aumentar e depois diminuir", "IsCorrect": false}
+    ]
+  },
+  {
+    "Subject": "Química",
+    "Topic": "Tabela periódica",
+    "Type": "MultipleChoice",
+    "Statement": "A eletronegatividade é a tendência de um átomo em atrair elétrons em uma ligação química. Qual dos seguintes elementos apresenta a maior eletronegatividade?",
+    "Explanation": "O flúor (F) é o elemento mais eletronegativo da tabela periódica, com valor 4,0 na escala de Pauling. A eletronegatividade cresce da esquerda para a direita e de baixo para cima na tabela periódica (excluindo os gases nobres).",
+    "Difficulty": 2,
+    "Tags": ["EM", "Química", "Lote1", "Tabela periódica"],
+    "Choices": [
+      {"Text": "Oxigênio (O)", "IsCorrect": false},
+      {"Text": "Cloro (Cl)", "IsCorrect": false},
+      {"Text": "Nitrogênio (N)", "IsCorrect": false},
+      {"Text": "Flúor (F)", "IsCorrect": true}
+    ]
+  },
+  {
+    "Subject": "Química",
+    "Topic": "Tabela periódica",
+    "Type": "MultipleChoice",
+    "Statement": "A energia de ionização é a energia necessária para remover um elétron de um átomo neutro no estado gasoso. Considerando os elementos do segundo período (Li, Be, B, C, N, O, F, Ne), qual apresenta a maior primeira energia de ionização?",
+    "Explanation": "O neônio (Ne), sendo um gás nobre com configuração eletrônica estável e completa, possui a maior energia de ionização do segundo período. É muito difícil remover um elétron de um átomo com camada de valência completa.",
+    "Difficulty": 3,
+    "Tags": ["EM", "Química", "Lote1", "Tabela periódica"],
+    "Choices": [
+      {"Text": "Lítio (Li)", "IsCorrect": false},
+      {"Text": "Flúor (F)", "IsCorrect": false},
+      {"Text": "Neônio (Ne)", "IsCorrect": true},
+      {"Text": "Carbono (C)", "IsCorrect": false}
+    ]
+  },
+  {
+    "Subject": "Química",
+    "Topic": "Tabela periódica",
+    "Type": "MultipleChoice",
+    "Statement": "Os metais alcalino-terrosos pertencem à família 2 (2A) da tabela periódica. Qual das seguintes propriedades é característica desses elementos?",
+    "Explanation": "Os metais alcalino-terrosos (Be, Mg, Ca, Sr, Ba, Ra) possuem 2 elétrons na camada de valência e tendem a formar cátions com carga 2+ ao perderem esses elétrons em ligações químicas.",
+    "Difficulty": 3,
+    "Tags": ["EM", "Química", "Lote1", "Tabela periódica"],
+    "Choices": [
+      {"Text": "Formam cátions com carga 1+", "IsCorrect": false},
+      {"Text": "São gases à temperatura ambiente", "IsCorrect": false},
+      {"Text": "Formam cátions com carga 2+", "IsCorrect": true},
+      {"Text": "Possuem 7 elétrons na camada de valência", "IsCorrect": false}
+    ]
+  },
+  {
+    "Subject": "Química",
+    "Topic": "Ligações",
+    "Type": "MultipleChoice",
+    "Statement": "A ligação iônica é formada, predominantemente, entre:",
+    "Explanation": "A ligação iônica ocorre pela transferência de elétrons entre átomos com grande diferença de eletronegatividade, tipicamente entre um metal (que perde elétrons) e um não metal (que ganha elétrons).",
+    "Difficulty": 1,
+    "Tags": ["EM", "Química", "Lote1", "Ligações"],
+    "Choices": [
+      {"Text": "Dois não metais", "IsCorrect": false},
+      {"Text": "Um metal e um não metal", "IsCorrect": true},
+      {"Text": "Dois metais", "IsCorrect": false},
+      {"Text": "Dois gases nobres", "IsCorrect": false}
+    ]
+  },
+  {
+    "Subject": "Química",
+    "Topic": "Ligações",
+    "Type": "MultipleChoice",
+    "Statement": "Na ligação covalente, os átomos envolvidos:",
+    "Explanation": "Na ligação covalente, os átomos compartilham pares de elétrons para atingir a estabilidade eletrônica. Esse tipo de ligação é comum entre átomos de não metais.",
+    "Difficulty": 2,
+    "Tags": ["EM", "Química", "Lote1", "Ligações"],
+    "Choices": [
+      {"Text": "Transferem elétrons de um para o outro", "IsCorrect": false},
+      {"Text": "Compartilham pares de elétrons", "IsCorrect": true},
+      {"Text": "Formam uma nuvem de elétrons deslocalizados", "IsCorrect": false},
+      {"Text": "Não interagem eletronicamente", "IsCorrect": false}
+    ]
+  },
+  {
+    "Subject": "Química",
+    "Topic": "Ligações",
+    "Type": "MultipleChoice",
+    "Statement": "A ligação metálica é caracterizada por:",
+    "Explanation": "Na ligação metálica, os elétrons da camada de valência dos átomos metálicos são deslocalizados, formando uma 'nuvem' ou 'mar' de elétrons que se move livremente entre os cátions metálicos. Isso explica propriedades como condutividade elétrica e maleabilidade.",
+    "Difficulty": 2,
+    "Tags": ["EM", "Química", "Lote1", "Ligações"],
+    "Choices": [
+      {"Text": "Compartilhamento de pares de elétrons entre dois átomos específicos", "IsCorrect": false},
+      {"Text": "Transferência total de elétrons entre átomos", "IsCorrect": false},
+      {"Text": "Atração entre moléculas polares", "IsCorrect": false},
+      {"Text": "Elétrons deslocalizados formando um 'mar de elétrons' entre cátions", "IsCorrect": true}
+    ]
+  },
+  {
+    "Subject": "Química",
+    "Topic": "Ligações",
+    "Type": "MultipleChoice",
+    "Statement": "A molécula de HCl (ácido clorídrico) possui uma ligação covalente polar. Isso significa que:",
+    "Explanation": "Em uma ligação covalente polar, os elétrons compartilhados ficam mais próximos do átomo mais eletronegativo. No HCl, o cloro é mais eletronegativo que o hidrogênio, atraindo mais fortemente os elétrons compartilhados e gerando uma distribuição assimétrica de cargas.",
+    "Difficulty": 3,
+    "Tags": ["EM", "Química", "Lote1", "Ligações"],
+    "Choices": [
+      {"Text": "Os elétrons são igualmente compartilhados entre H e Cl", "IsCorrect": false},
+      {"Text": "Os elétrons são completamente transferidos do H para o Cl", "IsCorrect": false},
+      {"Text": "Os elétrons compartilhados ficam mais próximos do átomo de cloro", "IsCorrect": true},
+      {"Text": "A molécula não possui momento dipolar", "IsCorrect": false}
+    ]
+  },
+  {
+    "Subject": "Química",
+    "Topic": "Ligações",
+    "Type": "MultipleChoice",
+    "Statement": "Considere as substâncias NaCl, H₂O, Fe e O₂. Qual delas apresenta exclusivamente ligação iônica?",
+    "Explanation": "O NaCl (cloreto de sódio) é formado pela ligação iônica entre o sódio (metal alcalino) e o cloro (halogênio). O Na perde um elétron formando Na⁺, e o Cl ganha um elétron formando Cl⁻. A atração eletrostática entre esses íons constitui a ligação iônica.",
+    "Difficulty": 3,
+    "Tags": ["EM", "Química", "Lote1", "Ligações"],
+    "Choices": [
+      {"Text": "H₂O", "IsCorrect": false},
+      {"Text": "Fe", "IsCorrect": false},
+      {"Text": "NaCl", "IsCorrect": true},
+      {"Text": "O₂", "IsCorrect": false}
+    ]
+  },
+  {
+    "Subject": "Química",
+    "Topic": "Ligações",
+    "Type": "MultipleChoice",
+    "Statement": "A ligação covalente dativa (ou coordenada) difere da ligação covalente comum porque:",
+    "Explanation": "Na ligação covalente dativa, o par de elétrons compartilhado é fornecido por apenas um dos átomos participantes, que já possui um par de elétrons livre. Na ligação covalente comum, cada átomo contribui com um elétron para o par compartilhado.",
+    "Difficulty": 4,
+    "Tags": ["EM", "Química", "Lote1", "Ligações"],
+    "Choices": [
+      {"Text": "Envolve transferência total de elétrons", "IsCorrect": false},
+      {"Text": "O par de elétrons compartilhado é fornecido por apenas um dos átomos", "IsCorrect": true},
+      {"Text": "Forma-se apenas entre metais e não metais", "IsCorrect": false},
+      {"Text": "Os elétrons são deslocalizados entre todos os átomos", "IsCorrect": false}
+    ]
+  },
+  {
+    "Subject": "Química",
+    "Topic": "Geometria molecular",
+    "Type": "MultipleChoice",
+    "Statement": "A molécula de CO₂ (dióxido de carbono) possui geometria:",
+    "Explanation": "O CO₂ possui geometria linear com ângulo de ligação de 180°. O carbono central faz duas ligações duplas com os oxigênios e não possui pares de elétrons não ligantes, resultando na geometria linear.",
+    "Difficulty": 2,
+    "Tags": ["EM", "Química", "Lote1", "Geometria molecular"],
+    "Choices": [
+      {"Text": "Angular", "IsCorrect": false},
+      {"Text": "Linear", "IsCorrect": true},
+      {"Text": "Trigonal plana", "IsCorrect": false},
+      {"Text": "Tetraédrica", "IsCorrect": false}
+    ]
+  },
+  {
+    "Subject": "Química",
+    "Topic": "Geometria molecular",
+    "Type": "MultipleChoice",
+    "Statement": "A molécula de água (H₂O) apresenta geometria angular. Essa geometria é explicada pela presença de:",
+    "Explanation": "O oxigênio na molécula de água faz duas ligações com hidrogênio e possui dois pares de elétrons não ligantes (livres). Esses pares livres exercem repulsão sobre os pares ligantes, distorcendo a geometria e resultando em um ângulo de aproximadamente 104,5°.",
+    "Difficulty": 3,
+    "Tags": ["EM", "Química", "Lote1", "Geometria molecular"],
+    "Choices": [
+      {"Text": "Apenas ligações simples entre os átomos", "IsCorrect": false},
+      {"Text": "Dois pares de elétrons não ligantes no oxigênio", "IsCorrect": true},
+      {"Text": "Ligações duplas entre oxigênio e hidrogênio", "IsCorrect": false},
+      {"Text": "Ausência de elétrons na camada de valência do oxigênio", "IsCorrect": false}
+    ]
+  },
+  {
+    "Subject": "Química",
+    "Topic": "Geometria molecular",
+    "Type": "MultipleChoice",
+    "Statement": "A molécula de BF₃ (trifluoreto de boro) possui geometria trigonal plana. Qual é o ângulo aproximado entre as ligações B-F?",
+    "Explanation": "Na geometria trigonal plana, o átomo central (boro) está ligado a três átomos (flúor) dispostos em um plano, com ângulos de 120° entre as ligações. O boro é uma exceção à regra do octeto, ficando estável com apenas 6 elétrons.",
+    "Difficulty": 3,
+    "Tags": ["EM", "Química", "Lote1", "Geometria molecular"],
+    "Choices": [
+      {"Text": "90°", "IsCorrect": false},
+      {"Text": "109,5°", "IsCorrect": false},
+      {"Text": "120°", "IsCorrect": true},
+      {"Text": "180°", "IsCorrect": false}
+    ]
+  },
+  {
+    "Subject": "Química",
+    "Topic": "Geometria molecular",
+    "Type": "MultipleChoice",
+    "Statement": "O metano (CH₄) é uma molécula com geometria tetraédrica. Quantos pares de elétrons não ligantes existem no átomo central (carbono)?",
+    "Explanation": "No metano, o carbono faz quatro ligações covalentes com quatro átomos de hidrogênio e não possui pares de elétrons não ligantes. As quatro ligações se orientam no espaço formando um tetraedro regular, com ângulos de 109,5°.",
+    "Difficulty": 3,
+    "Tags": ["EM", "Química", "Lote1", "Geometria molecular"],
+    "Choices": [
+      {"Text": "1", "IsCorrect": false},
+      {"Text": "2", "IsCorrect": false},
+      {"Text": "0", "IsCorrect": true},
+      {"Text": "4", "IsCorrect": false}
+    ]
+  },
+  {
+    "Subject": "Química",
+    "Topic": "Geometria molecular",
+    "Type": "MultipleChoice",
+    "Statement": "A amônia (NH₃) possui geometria piramidal (pirâmide trigonal). Essa geometria difere da trigonal plana porque:",
+    "Explanation": "Na amônia, o nitrogênio possui um par de elétrons não ligante além das três ligações N-H. Esse par livre ocupa uma posição no espaço e repele os pares ligantes para baixo, resultando na geometria de pirâmide trigonal em vez de trigonal plana.",
+    "Difficulty": 3,
+    "Tags": ["EM", "Química", "Lote1", "Geometria molecular"],
+    "Choices": [
+      {"Text": "O nitrogênio faz quatro ligações covalentes", "IsCorrect": false},
+      {"Text": "O nitrogênio possui um par de elétrons não ligante que repele os pares ligantes", "IsCorrect": true},
+      {"Text": "Os átomos de hidrogênio são muito grandes", "IsCorrect": false},
+      {"Text": "A molécula possui ligações duplas", "IsCorrect": false}
+    ]
+  },
+  {
+    "Subject": "Química",
+    "Topic": "Geometria molecular",
+    "Type": "MultipleChoice",
+    "Statement": "De acordo com a teoria da repulsão dos pares de elétrons da camada de valência (VSEPR), a geometria de uma molécula depende:",
+    "Explanation": "A teoria VSEPR prevê a geometria molecular com base no número total de pares de elétrons (ligantes e não ligantes) ao redor do átomo central. Os pares se repelem e se orientam no espaço de forma a minimizar essa repulsão, definindo a geometria da molécula.",
+    "Difficulty": 4,
+    "Tags": ["EM", "Química", "Lote1", "Geometria molecular"],
+    "Choices": [
+      {"Text": "Apenas da massa dos átomos envolvidos", "IsCorrect": false},
+      {"Text": "Apenas do número de ligações sigma", "IsCorrect": false},
+      {"Text": "Do número de pares de elétrons ligantes e não ligantes ao redor do átomo central", "IsCorrect": true},
+      {"Text": "Exclusivamente do tipo de ligação (iônica ou covalente)", "IsCorrect": false}
+    ]
+  },
+  {
+    "Subject": "Química",
+    "Topic": "Geometria molecular",
+    "Type": "MultipleChoice",
+    "Statement": "A molécula de SF₆ (hexafluoreto de enxofre) é um exemplo de molécula com geometria octaédrica, onde o enxofre expande seu octeto. Nessa molécula, o ângulo entre as ligações S-F adjacentes é de aproximadamente:",
+    "Explanation": "Na geometria octaédrica, o átomo central está rodeado por seis átomos dispostos simetricamente. Os ângulos entre ligações adjacentes são de 90°. O enxofre utiliza orbitais d para acomodar 12 elétrons em ligações, expandindo além do octeto convencional.",
+    "Difficulty": 5,
+    "Tags": ["EM", "Química", "Lote1", "Geometria molecular"],
+    "Choices": [
+      {"Text": "120°", "IsCorrect": false},
+      {"Text": "109,5°", "IsCorrect": false},
+      {"Text": "60°", "IsCorrect": false},
+      {"Text": "90°", "IsCorrect": true}
+    ]
+  }
+]

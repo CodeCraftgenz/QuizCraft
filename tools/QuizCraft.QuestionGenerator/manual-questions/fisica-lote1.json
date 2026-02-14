@@ -1,0 +1,377 @@
+[
+  {
+    "Subject": "Física",
+    "Topic": "Cinemática",
+    "Type": "MultipleChoice",
+    "Statement": "Um carro percorre uma estrada retilínea. Ele parte do km 10 e chega ao km 50. Qual é o deslocamento do carro?",
+    "Explanation": "O deslocamento é a diferença entre a posição final e a posição inicial. Deslocamento = 50 - 10 = 40 km.",
+    "Difficulty": 1,
+    "Tags": ["EM", "Física", "Lote1", "Cinemática"],
+    "Choices": [
+      {"Text": "50 km", "IsCorrect": false},
+      {"Text": "40 km", "IsCorrect": true},
+      {"Text": "10 km", "IsCorrect": false},
+      {"Text": "60 km", "IsCorrect": false}
+    ]
+  },
+  {
+    "Subject": "Física",
+    "Topic": "Cinemática",
+    "Type": "MultipleChoice",
+    "Statement": "Qual grandeza física relaciona a variação da posição de um corpo com o intervalo de tempo gasto?",
+    "Explanation": "A velocidade média é definida como a razão entre o deslocamento (variação da posição) e o intervalo de tempo gasto para realizá-lo.",
+    "Difficulty": 1,
+    "Tags": ["EM", "Física", "Lote1", "Cinemática"],
+    "Choices": [
+      {"Text": "Aceleração", "IsCorrect": false},
+      {"Text": "Força", "IsCorrect": false},
+      {"Text": "Velocidade", "IsCorrect": true},
+      {"Text": "Energia", "IsCorrect": false}
+    ]
+  },
+  {
+    "Subject": "Física",
+    "Topic": "Cinemática",
+    "Type": "MultipleChoice",
+    "Statement": "Uma pessoa caminha 200 m para a direita e depois 80 m para a esquerda, ao longo de uma reta. Qual é o módulo do deslocamento total?",
+    "Explanation": "O deslocamento é a diferença vetorial dos movimentos. Como são em sentidos opostos: 200 - 80 = 120 m na direção para a direita.",
+    "Difficulty": 2,
+    "Tags": ["EM", "Física", "Lote1", "Cinemática"],
+    "Choices": [
+      {"Text": "280 m", "IsCorrect": false},
+      {"Text": "200 m", "IsCorrect": false},
+      {"Text": "80 m", "IsCorrect": false},
+      {"Text": "120 m", "IsCorrect": true}
+    ]
+  },
+  {
+    "Subject": "Física",
+    "Topic": "Cinemática",
+    "Type": "MultipleChoice",
+    "Statement": "Um passageiro dentro de um trem em movimento observa que as árvores do lado de fora estão se movendo para trás. Isso ocorre porque o referencial adotado é:",
+    "Explanation": "O movimento depende do referencial adotado. Para o passageiro dentro do trem, ele está parado e os objetos externos se movem. O referencial é o próprio trem.",
+    "Difficulty": 2,
+    "Tags": ["EM", "Física", "Lote1", "Cinemática"],
+    "Choices": [
+      {"Text": "O solo", "IsCorrect": false},
+      {"Text": "O trem", "IsCorrect": true},
+      {"Text": "As árvores", "IsCorrect": false},
+      {"Text": "O ar atmosférico", "IsCorrect": false}
+    ]
+  },
+  {
+    "Subject": "Física",
+    "Topic": "Cinemática",
+    "Type": "MultipleChoice",
+    "Statement": "Um ciclista percorre 150 m em 30 s e depois 250 m em 20 s. Qual é a velocidade média do ciclista no percurso total?",
+    "Explanation": "A velocidade média é a distância total dividida pelo tempo total. Vm = (150 + 250) / (30 + 20) = 400 / 50 = 8 m/s.",
+    "Difficulty": 3,
+    "Tags": ["EM", "Física", "Lote1", "Cinemática"],
+    "Choices": [
+      {"Text": "5 m/s", "IsCorrect": false},
+      {"Text": "10 m/s", "IsCorrect": false},
+      {"Text": "8 m/s", "IsCorrect": true},
+      {"Text": "12,5 m/s", "IsCorrect": false}
+    ]
+  },
+  {
+    "Subject": "Física",
+    "Topic": "Cinemática",
+    "Type": "MultipleChoice",
+    "Statement": "Um corpo parte da posição 20 m e, após 10 s, está na posição -30 m. Qual é a velocidade média desse corpo?",
+    "Explanation": "Vm = ΔS/Δt = (Sf - Si)/Δt = (-30 - 20)/10 = -50/10 = -5 m/s. O sinal negativo indica que o corpo se moveu no sentido contrário ao positivo da trajetória.",
+    "Difficulty": 4,
+    "Tags": ["EM", "Física", "Lote1", "Cinemática"],
+    "Choices": [
+      {"Text": "5 m/s", "IsCorrect": false},
+      {"Text": "3 m/s", "IsCorrect": false},
+      {"Text": "-5 m/s", "IsCorrect": true},
+      {"Text": "-3 m/s", "IsCorrect": false}
+    ]
+  },
+  {
+    "Subject": "Física",
+    "Topic": "MU/MUV",
+    "Type": "MultipleChoice",
+    "Statement": "No Movimento Uniforme (MU), qual grandeza permanece constante ao longo do tempo?",
+    "Explanation": "No Movimento Uniforme, a velocidade escalar do corpo permanece constante, ou seja, não varia ao longo do tempo.",
+    "Difficulty": 1,
+    "Tags": ["EM", "Física", "Lote1", "MU/MUV"],
+    "Choices": [
+      {"Text": "A aceleração variável", "IsCorrect": false},
+      {"Text": "A posição", "IsCorrect": false},
+      {"Text": "A velocidade", "IsCorrect": true},
+      {"Text": "O deslocamento", "IsCorrect": false}
+    ]
+  },
+  {
+    "Subject": "Física",
+    "Topic": "MU/MUV",
+    "Type": "MultipleChoice",
+    "Statement": "Um carro parte do repouso com aceleração constante de 2 m/s². Qual será sua velocidade após 8 s?",
+    "Explanation": "Usando a equação v = v₀ + a·t, com v₀ = 0 (repouso), a = 2 m/s² e t = 8 s: v = 0 + 2 × 8 = 16 m/s.",
+    "Difficulty": 2,
+    "Tags": ["EM", "Física", "Lote1", "MU/MUV"],
+    "Choices": [
+      {"Text": "10 m/s", "IsCorrect": false},
+      {"Text": "16 m/s", "IsCorrect": true},
+      {"Text": "8 m/s", "IsCorrect": false},
+      {"Text": "20 m/s", "IsCorrect": false}
+    ]
+  },
+  {
+    "Subject": "Física",
+    "Topic": "MU/MUV",
+    "Type": "MultipleChoice",
+    "Statement": "No Movimento Uniformemente Variado (MUV), a aceleração é constante. Qual equação horária descreve a posição no MUV?",
+    "Explanation": "A equação horária da posição no MUV é S = S₀ + v₀·t + (a·t²)/2, onde S₀ é a posição inicial, v₀ a velocidade inicial, a a aceleração e t o tempo.",
+    "Difficulty": 2,
+    "Tags": ["EM", "Física", "Lote1", "MU/MUV"],
+    "Choices": [
+      {"Text": "S = S₀ + v·t", "IsCorrect": false},
+      {"Text": "S = v₀·t + a·t²", "IsCorrect": false},
+      {"Text": "S = S₀ + v₀·t + (a·t²)/2", "IsCorrect": true},
+      {"Text": "S = S₀ + a·t", "IsCorrect": false}
+    ]
+  },
+  {
+    "Subject": "Física",
+    "Topic": "MU/MUV",
+    "Type": "MultipleChoice",
+    "Statement": "Um móvel parte com velocidade inicial de 10 m/s e aceleração de 3 m/s². Qual a posição do móvel após 4 s, sabendo que a posição inicial é 0?",
+    "Explanation": "Usando S = S₀ + v₀·t + (a·t²)/2: S = 0 + 10×4 + (3×16)/2 = 40 + 24 = 64 m.",
+    "Difficulty": 3,
+    "Tags": ["EM", "Física", "Lote1", "MU/MUV"],
+    "Choices": [
+      {"Text": "52 m", "IsCorrect": false},
+      {"Text": "64 m", "IsCorrect": true},
+      {"Text": "40 m", "IsCorrect": false},
+      {"Text": "72 m", "IsCorrect": false}
+    ]
+  },
+  {
+    "Subject": "Física",
+    "Topic": "MU/MUV",
+    "Type": "MultipleChoice",
+    "Statement": "Um veículo a 20 m/s freia com aceleração de -4 m/s² até parar. Qual a distância percorrida durante a frenagem?",
+    "Explanation": "Usando a equação de Torricelli: v² = v₀² + 2·a·ΔS → 0 = 400 + 2·(-4)·ΔS → 8·ΔS = 400 → ΔS = 50 m.",
+    "Difficulty": 3,
+    "Tags": ["EM", "Física", "Lote1", "MU/MUV"],
+    "Choices": [
+      {"Text": "100 m", "IsCorrect": false},
+      {"Text": "25 m", "IsCorrect": false},
+      {"Text": "50 m", "IsCorrect": true},
+      {"Text": "80 m", "IsCorrect": false}
+    ]
+  },
+  {
+    "Subject": "Física",
+    "Topic": "MU/MUV",
+    "Type": "MultipleChoice",
+    "Statement": "Dois carros, A e B, partem do mesmo ponto no mesmo instante. O carro A tem velocidade constante de 15 m/s e o carro B parte do repouso com aceleração de 2 m/s². Em que instante B alcança A?",
+    "Explanation": "Igualando as posições: 15t = t² (pois S_A = 15t e S_B = t², já que a/2 = 1). Assim t² - 15t = 0 → t(t - 15) = 0, logo t = 15 s (descartando t = 0).",
+    "Difficulty": 5,
+    "Tags": ["EM", "Física", "Lote1", "MU/MUV"],
+    "Choices": [
+      {"Text": "10 s", "IsCorrect": false},
+      {"Text": "20 s", "IsCorrect": false},
+      {"Text": "7,5 s", "IsCorrect": false},
+      {"Text": "15 s", "IsCorrect": true}
+    ]
+  },
+  {
+    "Subject": "Física",
+    "Topic": "Gráficos",
+    "Type": "MultipleChoice",
+    "Statement": "Em um gráfico de posição (S) em função do tempo (t), uma reta inclinada com inclinação positiva indica que o corpo está em:",
+    "Explanation": "Em um gráfico S × t, uma reta com inclinação positiva significa que a posição aumenta uniformemente com o tempo, caracterizando um Movimento Uniforme progressivo.",
+    "Difficulty": 1,
+    "Tags": ["EM", "Física", "Lote1", "Gráficos"],
+    "Choices": [
+      {"Text": "Repouso", "IsCorrect": false},
+      {"Text": "Movimento Uniformemente Variado", "IsCorrect": false},
+      {"Text": "Movimento Uniforme progressivo", "IsCorrect": true},
+      {"Text": "Queda livre", "IsCorrect": false}
+    ]
+  },
+  {
+    "Subject": "Física",
+    "Topic": "Gráficos",
+    "Type": "MultipleChoice",
+    "Statement": "No gráfico velocidade × tempo, o que representa a área sob a curva entre dois instantes?",
+    "Explanation": "A área sob a curva de um gráfico v × t corresponde ao deslocamento do corpo naquele intervalo de tempo.",
+    "Difficulty": 2,
+    "Tags": ["EM", "Física", "Lote1", "Gráficos"],
+    "Choices": [
+      {"Text": "A aceleração média", "IsCorrect": false},
+      {"Text": "O deslocamento", "IsCorrect": true},
+      {"Text": "A velocidade média", "IsCorrect": false},
+      {"Text": "A força resultante", "IsCorrect": false}
+    ]
+  },
+  {
+    "Subject": "Física",
+    "Topic": "Gráficos",
+    "Type": "MultipleChoice",
+    "Statement": "Em um gráfico velocidade × tempo, uma reta horizontal acima do eixo do tempo indica que o corpo está em:",
+    "Explanation": "Uma reta horizontal no gráfico v × t significa velocidade constante e diferente de zero, o que caracteriza um Movimento Uniforme.",
+    "Difficulty": 3,
+    "Tags": ["EM", "Física", "Lote1", "Gráficos"],
+    "Choices": [
+      {"Text": "Movimento Uniformemente Variado", "IsCorrect": false},
+      {"Text": "Repouso", "IsCorrect": false},
+      {"Text": "Movimento Uniforme", "IsCorrect": true},
+      {"Text": "Movimento retardado", "IsCorrect": false}
+    ]
+  },
+  {
+    "Subject": "Física",
+    "Topic": "Gráficos",
+    "Type": "MultipleChoice",
+    "Statement": "No gráfico velocidade × tempo de um MUV, a inclinação (coeficiente angular) da reta representa qual grandeza?",
+    "Explanation": "No gráfico v × t, a inclinação da reta dá a taxa de variação da velocidade em relação ao tempo, que é exatamente a aceleração do corpo.",
+    "Difficulty": 3,
+    "Tags": ["EM", "Física", "Lote1", "Gráficos"],
+    "Choices": [
+      {"Text": "A velocidade média", "IsCorrect": false},
+      {"Text": "O deslocamento", "IsCorrect": false},
+      {"Text": "A posição inicial", "IsCorrect": false},
+      {"Text": "A aceleração", "IsCorrect": true}
+    ]
+  },
+  {
+    "Subject": "Física",
+    "Topic": "Gráficos",
+    "Type": "MultipleChoice",
+    "Statement": "Um gráfico posição × tempo mostra uma parábola com concavidade voltada para cima. Que tipo de movimento isso representa?",
+    "Explanation": "No gráfico S × t, uma parábola indica MUV. A concavidade para cima significa que a aceleração é positiva (a > 0), ou seja, o corpo está acelerando no sentido positivo.",
+    "Difficulty": 3,
+    "Tags": ["EM", "Física", "Lote1", "Gráficos"],
+    "Choices": [
+      {"Text": "MU progressivo", "IsCorrect": false},
+      {"Text": "MUV com aceleração positiva", "IsCorrect": true},
+      {"Text": "MU retrógrado", "IsCorrect": false},
+      {"Text": "Repouso", "IsCorrect": false}
+    ]
+  },
+  {
+    "Subject": "Física",
+    "Topic": "Gráficos",
+    "Type": "MultipleChoice",
+    "Statement": "Um corpo se move segundo o gráfico v × t onde a velocidade varia linearmente de 0 a 20 m/s em 10 s. Qual o deslocamento nesse intervalo?",
+    "Explanation": "A área sob a curva no gráfico v × t dá o deslocamento. Como é um triângulo: ΔS = (base × altura)/2 = (10 × 20)/2 = 100 m.",
+    "Difficulty": 4,
+    "Tags": ["EM", "Física", "Lote1", "Gráficos"],
+    "Choices": [
+      {"Text": "200 m", "IsCorrect": false},
+      {"Text": "100 m", "IsCorrect": true},
+      {"Text": "50 m", "IsCorrect": false},
+      {"Text": "150 m", "IsCorrect": false}
+    ]
+  },
+  {
+    "Subject": "Física",
+    "Topic": "Gráficos",
+    "Type": "MultipleChoice",
+    "Statement": "Em um gráfico v × t, um corpo possui velocidade 10 m/s em t = 0 e velocidade -10 m/s em t = 4 s (variação linear). Qual o deslocamento total entre t = 0 e t = 4 s?",
+    "Explanation": "A reta cruza v = 0 em t = 2 s. O deslocamento é a soma algébrica das áreas: triângulo positivo (0 a 2 s) = (2×10)/2 = 10 m e triângulo negativo (2 a 4 s) = (2×10)/2 = -10 m. Total = 10 + (-10) = 0 m.",
+    "Difficulty": 5,
+    "Tags": ["EM", "Física", "Lote1", "Gráficos"],
+    "Choices": [
+      {"Text": "20 m", "IsCorrect": false},
+      {"Text": "10 m", "IsCorrect": false},
+      {"Text": "0 m", "IsCorrect": true},
+      {"Text": "-20 m", "IsCorrect": false}
+    ]
+  },
+  {
+    "Subject": "Física",
+    "Topic": "Queda livre",
+    "Type": "MultipleChoice",
+    "Statement": "Na queda livre, desprezando a resistência do ar, qual é o valor aproximado da aceleração gravitacional na superfície da Terra, comumente adotado em exercícios?",
+    "Explanation": "O valor padrão da aceleração gravitacional adotado em exercícios de Física no Ensino Médio é g = 10 m/s² (valor aproximado).",
+    "Difficulty": 1,
+    "Tags": ["EM", "Física", "Lote1", "Queda livre"],
+    "Choices": [
+      {"Text": "5 m/s²", "IsCorrect": false},
+      {"Text": "10 m/s²", "IsCorrect": true},
+      {"Text": "15 m/s²", "IsCorrect": false},
+      {"Text": "20 m/s²", "IsCorrect": false}
+    ]
+  },
+  {
+    "Subject": "Física",
+    "Topic": "Queda livre",
+    "Type": "MultipleChoice",
+    "Statement": "Um objeto é solto do repouso de uma certa altura. Considerando g = 10 m/s², qual será sua velocidade após 3 s de queda?",
+    "Explanation": "Na queda livre, v = v₀ + g·t. Como parte do repouso (v₀ = 0): v = 0 + 10 × 3 = 30 m/s.",
+    "Difficulty": 3,
+    "Tags": ["EM", "Física", "Lote1", "Queda livre"],
+    "Choices": [
+      {"Text": "20 m/s", "IsCorrect": false},
+      {"Text": "15 m/s", "IsCorrect": false},
+      {"Text": "30 m/s", "IsCorrect": true},
+      {"Text": "45 m/s", "IsCorrect": false}
+    ]
+  },
+  {
+    "Subject": "Física",
+    "Topic": "Queda livre",
+    "Type": "MultipleChoice",
+    "Statement": "Um objeto em queda livre parte do repouso. Considerando g = 10 m/s², qual a distância percorrida nos primeiros 2 s?",
+    "Explanation": "Usando h = v₀·t + (g·t²)/2 com v₀ = 0: h = (10 × 4)/2 = 20 m.",
+    "Difficulty": 3,
+    "Tags": ["EM", "Física", "Lote1", "Queda livre"],
+    "Choices": [
+      {"Text": "10 m", "IsCorrect": false},
+      {"Text": "40 m", "IsCorrect": false},
+      {"Text": "20 m", "IsCorrect": true},
+      {"Text": "5 m", "IsCorrect": false}
+    ]
+  },
+  {
+    "Subject": "Física",
+    "Topic": "Queda livre",
+    "Type": "MultipleChoice",
+    "Statement": "Uma bola é lançada verticalmente para cima com velocidade inicial de 40 m/s. Considerando g = 10 m/s², qual é o tempo para a bola atingir a altura máxima?",
+    "Explanation": "Na altura máxima a velocidade é zero. Usando v = v₀ - g·t: 0 = 40 - 10·t → t = 4 s.",
+    "Difficulty": 3,
+    "Tags": ["EM", "Física", "Lote1", "Queda livre"],
+    "Choices": [
+      {"Text": "2 s", "IsCorrect": false},
+      {"Text": "4 s", "IsCorrect": true},
+      {"Text": "8 s", "IsCorrect": false},
+      {"Text": "6 s", "IsCorrect": false}
+    ]
+  },
+  {
+    "Subject": "Física",
+    "Topic": "Queda livre",
+    "Type": "MultipleChoice",
+    "Statement": "Uma bola é lançada verticalmente para cima com velocidade inicial de 30 m/s. Adotando g = 10 m/s², qual é a altura máxima atingida pela bola?",
+    "Explanation": "Na altura máxima, v = 0. Usando v² = v₀² - 2·g·h: 0 = 900 - 20·h → h = 45 m.",
+    "Difficulty": 4,
+    "Tags": ["EM", "Física", "Lote1", "Queda livre"],
+    "Choices": [
+      {"Text": "30 m", "IsCorrect": false},
+      {"Text": "60 m", "IsCorrect": false},
+      {"Text": "45 m", "IsCorrect": true},
+      {"Text": "90 m", "IsCorrect": false}
+    ]
+  },
+  {
+    "Subject": "Física",
+    "Topic": "Queda livre",
+    "Type": "MultipleChoice",
+    "Statement": "Um objeto é solto do repouso a 80 m de altura. Considerando g = 10 m/s² e desprezando a resistência do ar, qual é o tempo de queda e a velocidade ao atingir o solo?",
+    "Explanation": "Usando h = g·t²/2: 80 = 10·t²/2 → t² = 16 → t = 4 s. A velocidade: v = g·t = 10 × 4 = 40 m/s.",
+    "Difficulty": 3,
+    "Tags": ["EM", "Física", "Lote1", "Queda livre"],
+    "Choices": [
+      {"Text": "t = 4 s e v = 40 m/s", "IsCorrect": true},
+      {"Text": "t = 2 s e v = 20 m/s", "IsCorrect": false},
+      {"Text": "t = 8 s e v = 80 m/s", "IsCorrect": false},
+      {"Text": "t = 4 s e v = 80 m/s", "IsCorrect": false}
+    ]
+  }
+]
