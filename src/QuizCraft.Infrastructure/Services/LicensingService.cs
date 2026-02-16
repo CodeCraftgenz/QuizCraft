@@ -32,7 +32,8 @@ public class LicensingService : ILicensingService
 
     /// <summary>
     /// Verifica se existe uma licenca valida.
-    /// Tenta validar online; se offline, aceita a licenca local dentro do periodo de graca.
+    /// Se a licenca local existe e o hardware confere, aceita direto.
+    /// Validacao online e feita apenas periodicamente (a cada 7 dias).
     /// </summary>
     public async Task<LicenseState> CheckLicenseAsync()
     {
@@ -53,26 +54,36 @@ public class LicensingService : ILicensingService
             return LicenseState.Invalid;
         }
 
-        // 3. Tentar validar online
+        // 3. Se a ultima validacao online foi recente, aceitar sem consultar o servidor
+        var timeSinceLastValidation = DateTime.UtcNow - stored.LastValidatedAt;
+        if (timeSinceLastValidation < OfflineGracePeriod)
+        {
+            Logger.Information("Licenca aceita localmente (ultima validacao: {Hours}h atras)",
+                timeSinceLastValidation.TotalHours.ToString("F1"));
+            return LicenseState.Valid;
+        }
+
+        // 4. Validacao online periodica (a cada 7 dias)
+        Logger.Information("Validacao online necessaria (ultima: {Days} dias atras)",
+            timeSinceLastValidation.TotalDays.ToString("F0"));
+
         var result = await _apiClient.VerifyLicenseAsync(stored.Email, _hardwareId);
 
         if (result.Valid)
         {
-            // Atualizar data da ultima validacao
             stored.LastValidatedAt = DateTime.UtcNow;
             _storage.Save(stored);
-            Logger.Information("Licenca validada online para {Email}", stored.Email);
+            Logger.Information("Licenca revalidada online para {Email}", stored.Email);
             return LicenseState.Valid;
         }
 
-        // 4. Se a validacao falhou, verificar modo offline
+        // 5. Se falhou por conexao, dar mais tempo de graca (30 dias no total)
         if (IsOfflineAcceptable(result.Message))
         {
-            var timeSinceLastValidation = DateTime.UtcNow - stored.LastValidatedAt;
-            if (timeSinceLastValidation < OfflineGracePeriod)
+            if (timeSinceLastValidation < TimeSpan.FromDays(30))
             {
-                Logger.Information("Licenca aceita em modo offline (ultima validacao: {Hours}h atras)",
-                    timeSinceLastValidation.TotalHours.ToString("F1"));
+                Logger.Information("Sem conexao, mas dentro do periodo estendido de graca ({Days} dias)",
+                    timeSinceLastValidation.TotalDays.ToString("F0"));
                 return LicenseState.Valid;
             }
 
@@ -80,7 +91,7 @@ public class LicensingService : ILicensingService
             return LicenseState.Error;
         }
 
-        // 5. Licenca invalida no servidor
+        // 6. Licenca invalida no servidor
         Logger.Warning("Licenca rejeitada pelo servidor: {Message}", result.Message);
         return LicenseState.Invalid;
     }
