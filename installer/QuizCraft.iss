@@ -11,7 +11,7 @@
 #define MyAppURL "https://codecraftgenz.com.br"
 #define MyAppExeName "QuizCraft.Presentation.exe"
 #define MyAppMutex "QuizCraft_SingleInstance_Mutex"
-#define PublishDir "..\src\QuizCraft.Presentation\bin\Release\net9.0-windows\win-x64\publish"
+#define PublishDir "publish"
 
 [Setup]
 ; Identificadores
