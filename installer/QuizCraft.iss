@@ -88,6 +88,8 @@ Name: "desktopicon"; Description: "{cm:CreateDesktopIcon}"; GroupDescription: "{
 [Files]
 ; Todos os arquivos do publish self-contained (inclui .NET runtime)
 Source: "{#PublishDir}\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs
+; Banco de dados pre-populado com ~1000 questoes (so copia se nao existir)
+Source: "quizcraft.db"; DestDir: "{userappdata}\{#MyAppName}"; Flags: onlyifdoesntexist uninsneveruninstall
 
 [Icons]
 ; Menu Iniciar
